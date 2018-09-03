@@ -1,8 +1,18 @@
 # JavaScript in zhengrr's eyes
 
+[*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript) (1995)
+
+## References
+
+["JavaScript reference"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
+
 ## Guides
 
 ["JavaScript教程"](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
+
+## Awesome
+
+[*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
 ## License
 
