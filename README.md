@@ -1,5 +1,7 @@
 # JavaScript in zhengrr's eyes
 
+一份为 zhengrr 定制化的，关于 JavaScript 语言相关和不那么相关技术的备忘。
+
 [*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript) (1995)
 
 ## References
