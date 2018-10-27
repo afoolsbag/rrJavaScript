@@ -1,0 +1,9 @@
+{
+  "name": "rrjavascript",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "devDependencies": {
+    "@types/jest": "*",
+    "jest": "*"
+  },
+  "private": true
+}

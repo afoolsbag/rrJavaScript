@@ -1,0 +1,6 @@
+{
+  "name": "rrnode",
+  "scripts": {
+    "test": "jest"
+  }
+}

@@ -18,6 +18,10 @@
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
+/ [*Jest*](https://jestjs.io/)
+/ [*Node.js*](https://nodejs.org/)
+/ [*npm*](https://npmjs.com/)
+
 ## 许可
 
 <p xmlns:dct="https://purl.org/dc/terms/">
