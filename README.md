@@ -1,14 +1,16 @@
-# JavaScript in zhengrr's eyes
-
-一份为 zhengrr 定制化的，关于 JavaScript 语言相关和不那么相关技术的备忘。
+# zhengrr 所知的 JavaScript
 
 [*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript) (1995)
 
-## References
+## 参考
 
 ["JavaScript reference"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
 
-## Guides
+## 风格
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+
+## 指南
 
 ["JavaScript教程"](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
 
@@ -16,7 +18,7 @@
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
-## License
+## 许可
 
 <p xmlns:dct="https://purl.org/dc/terms/">
   <a rel="license"
@@ -27,6 +29,5 @@
   To the extent possible under law,
   <span resource="[_:publisher]" rel="dct:publisher">
     <span property="dct:title">zhengrr</span></span>
-  has waived all copyright and related or neighboring rights to
-  this work.
+  has waived all copyright and related or neighboring rights to this work.
 </p>
