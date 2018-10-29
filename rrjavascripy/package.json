@@ -1,5 +1,5 @@
 {
-  "name": "rrnode",
+  "name": "rrjavascript",
   "scripts": {
     "test": "jest"
   }
