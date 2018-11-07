@@ -2,5 +2,9 @@
   "name": "rrjavascript",
   "scripts": {
     "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "jest": "*"
   }
 }

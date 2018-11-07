@@ -18,11 +18,16 @@
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
+/ [*Electron*](https://electronjs.org/)
 / [*Jest*](https://jestjs.io/)
 / [*Node.js*](https://nodejs.org/)
 / [*npm*](https://npmjs.com/)
 
+/ [*WebStorm*](https://jetbrains.com/webstorm/)
+
 ## 许可
+
+项目采用 Unlicense 许可，文档采用 CC0-1.0 许可：
 
 <p xmlns:dct="https://purl.org/dc/terms/">
   <a rel="license"

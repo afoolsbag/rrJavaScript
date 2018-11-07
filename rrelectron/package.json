@@ -1,0 +1,14 @@
+{
+  "name": "rrelectron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . rrelectron --platform=win32 --arch=x64 --overwrite",
+    "package": "asar pack rrelectron-win32-x64/resources/app rrelectron-win32-x64/resources/app.asar"
+  },
+  "devDependencies": {
+    "asar": "*",
+    "electron": "*",
+    "electron-packager": "*"
+  }
+}
