@@ -20,6 +20,7 @@
 
 / [*Electron*](https://electronjs.org/)
 / [*Jest*](https://jestjs.io/)
+/ [*JSDoc*](http://usejsdoc.org/)
 / [*Node.js*](https://nodejs.org/)
 / [*npm*](https://npmjs.com/)
 

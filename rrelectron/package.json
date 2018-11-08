@@ -1,5 +1,6 @@
 {
   "name": "rrelectron",
+  "license": "Unlicense",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -10,5 +11,6 @@
     "asar": "*",
     "electron": "*",
     "electron-packager": "*"
-  }
+  },
+  "private": true
 }

@@ -1,47 +1,57 @@
+/**
+ * @file
+ *
+ * @version 2018-11-08
+ * @since 2018-11-08
+ * @author zhengrr
+ * @license Unlicense
+ */
+
 'use strict'
 
-test('Undefined', () => {
-  expect(typeof undefined).toBe('undefined')
+test('undefined', () => {
+  let u
+  expect(typeof u).toBe('undefined')
 })
 
-test('Null', () => {
+test('null', () => {
   const n = null
   expect(typeof n).toBe('object')
 })
 
-test('Number', () => {
-  const n = 1337
-  expect(typeof n).toBe('number')
-})
-
-test('String', () => {
-  const s = 'hello, world'
-  expect(typeof s).toBe('string')
-})
-
-test('Boolean', () => {
+test('boolean', () => {
   const b = false
   expect(typeof b).toBe('boolean')
 })
 
-test('Symbol', () => {
+test('number', () => {
+  const n = 1337
+  expect(typeof n).toBe('number')
+})
+
+test('string', () => {
+  const s = 'hello, world'
+  expect(typeof s).toBe('string')
+})
+
+test('symbol', () => {
   const s = Symbol()
   expect(typeof s).toBe('symbol')
 })
 
-test('Object', () => {
+test('object', () => {
   const o = {}
-  expect(typeof o).toBe('object')
+  expect(o).toBeInstanceOf(Object)
 
   const f = function () {}
-  expect(typeof f).toBe('function')
+  expect(f).toBeInstanceOf(Function)
 
   const a = []
-  expect(Array.isArray(a)).toBe(true)
+  expect(a).toBeInstanceOf(Array)
 
   const d = new Date()
-  expect(typeof d).toBe('object')
+  expect(d).toBeInstanceOf(Date)
 
   const r = /regex/
-  expect(typeof r).toBe('object')
+  expect(r).toBeInstanceOf(RegExp)
 })
