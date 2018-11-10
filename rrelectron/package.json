@@ -1,6 +1,7 @@
 {
   "name": "rrelectron",
   "license": "Unlicense",
+  "author": "zhengrr",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
