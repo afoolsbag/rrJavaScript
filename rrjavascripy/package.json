@@ -1,12 +1,13 @@
 {
   "name": "rrjavascript",
   "license": "Unlicense",
+  "author": "zhengrr",
   "scripts": {
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "*",
-    "jest": "*"
+    "@types/jest": "^23.3.9",
+    "jest": "^23.6.0"
   },
   "private": true
 }

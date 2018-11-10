@@ -4,7 +4,7 @@
 
 ## 参考
 
-["JavaScript reference"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
+["JavaScript 参考文档"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
 
 ## 风格
 
@@ -12,17 +12,30 @@
 
 ## 指南
 
-["JavaScript教程"](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
+/ ["JavaScript 指南"](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
+/ ["JavaScript 教程"](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
 
 ## Awesome
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
+/ [*Less*](http://lesscss.org/)
+/ [*Sass*](https://sass-lang.com/)
+/ [*Stylus*](http://stylus-lang.com/)
+
+/ [*Babel*](https://babeljs.io/)
+/ [*CoffeeScript*](https://coffeescript.org/)
+/ [*Dart*](https://dartlang.org/)
+/ [*TypeScript*](https://www.typescriptlang.org/)
+
+/ [*gulp*](https://gulpjs.com/)
+/ [*Grunt*](https://gruntjs.com/)
+/ [*npm*](https://npmjs.com/)
+
 / [*Electron*](https://electronjs.org/)
 / [*Jest*](https://jestjs.io/)
 / [*JSDoc*](http://usejsdoc.org/)
 / [*Node.js*](https://nodejs.org/)
-/ [*npm*](https://npmjs.com/)
 
 / [*WebStorm*](https://jetbrains.com/webstorm/)
 
