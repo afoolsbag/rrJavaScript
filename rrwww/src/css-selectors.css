@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+/*
+ * 通用选择器
+ */
+* {
+    color: red;
+}
+
+/*
+ * 元素选择器
+ * <h1>...</h1>
+ */
+h1 {
+    color: orange;
+}
+
+/*
+ * 类选择器
+ * <h1 class='header'>...</h1>
+ */
+.the-headers {
+    color: yellow;
+}
+
+/*
+ * 标识选择器
+ * <h1 id='title'>...</h1>
+ */
+#the-title {
+    color: chartreuse;
+}
+
+/*
+ * 属性和值选择器
+ */
+[attr] { /* <h1 attr>...</h1> */
+    color: green;
+}
+
+[attr='val'] { /* <h1 attr='val'>...</h1> */
+    color: springgreen;
+}
+
+[attr~='val'] { /* <h1 attr='abc val xyz'>...<.h1> */
+    color: cyan;
+}
+
+[attr|='val'] { /* <h1 attr='val'>...</h1> or <h1 attr='val-...'>...</h1> */
+    color: azure;
+}
+
+[attr^='val'] { /* <h1 attr='val...'>...</h1> */
+    color: blue;
+}
+
+[attr$='val'] { /* <h1 attr='...val'>...</h1> */
+    color: violet;
+}
+
+[attr*='val'] { /* <h1 attr='...val...'>...</h1> */
+    color: magenta;
+}
+
+/*
+ * 伪类选择器
+ */
+h1:active {
+    color: mistyrose;
+}
+
+/*
+ * 伪元素选择器
+ */
+h1::after {
+    color: red;
+}
+
+/*
+ * 选择器组
+ */
+h1, h2, h3 {
+    color: orange;
+}
+
+/*
+ * 子选择器
+ */
+.the-tables td {
+    color: yellow;
+}
+
+/*
+ * 直接子选择器
+ */
+.the-tables > tbody > tr > td {
+    color: chartreuse;
+}
+
+/*
+ * 弟选择器
+ */
+.the-tables td ~ td {
+    color: green;
+}
+
+/*
+ * 直接弟选择器
+ */
+.the-tables td + td {
+    color: springgreen;
+}

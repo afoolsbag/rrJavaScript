@@ -6,6 +6,8 @@
 
 ["JavaScript 参考文档"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
 
+[*SRI Hash Generator*](https://srihash.org)
+
 ## 风格
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
@@ -19,9 +21,14 @@
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
-/ [*Less*](http://lesscss.org/)
-/ [*Sass*](https://sass-lang.com/)
-/ [*Stylus*](http://stylus-lang.com/)
+/ [*Bootstrap*](https://getbootstrap.com/)
+/ [*Bootstrap 中文网*](http://www.bootcss.com/)
+/ [*jQuery*](https://jquery.com/)
+
+/ [*Electron*](https://electronjs.org/)
+/ [*Jest*](https://jestjs.io/)
+/ [*JSDoc*](http://usejsdoc.org/)
+/ [*Node.js*](https://nodejs.org/)
 
 / [*Babel*](https://babeljs.io/)
 / [*CoffeeScript*](https://coffeescript.org/)
@@ -32,12 +39,24 @@
 / [*Grunt*](https://gruntjs.com/)
 / [*npm*](https://npmjs.com/)
 
-/ [*Electron*](https://electronjs.org/)
-/ [*Jest*](https://jestjs.io/)
-/ [*JSDoc*](http://usejsdoc.org/)
-/ [*Node.js*](https://nodejs.org/)
-
 / [*WebStorm*](https://jetbrains.com/webstorm/)
+
+## Hypertext Markup Language
+
+/ [*Hypertext Markup Language*](https://w3.org/html/)
+/ [*Web Hypertext Application Technology Working Group*](https://whatwg.org/)
+
+[*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
+
+## Cascading Style Sheets
+
+/ [*Cascading Style Sheets*](https://www.w3.org/Style/CSS/)
+
+[*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
+
+/ [*Less*](http://lesscss.org/)
+/ [*Sass*](https://sass-lang.com/)
+/ [*Stylus*](http://stylus-lang.com/)
 
 ## 许可
 
