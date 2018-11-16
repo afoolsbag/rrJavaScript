@@ -12,23 +12,23 @@ function clean (cb) {
 
 function cssTranspile (cb) {
   src('src/**/*.css')
-    .pipe(dest('build'))
+    .pipe(dest('dist'))
 
   src('src/**/*.less')
     .pipe(less())
-    .pipe(dest('build'))
+    .pipe(dest('dist'))
 
   src('src/**/*.sass')
     .pipe(sass())
-    .pipe(dest('build'))
+    .pipe(dest('dist'))
 
   src('src/**/*.scss')
     .pipe(sass())
-    .pipe(dest('build'))
+    .pipe(dest('dist'))
 
   src('src/**/*.styl')
     .pipe(stylus())
-    .pipe(dest('build'))
+    .pipe(dest('dist'))
 
   cb()
 }

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <style>
+    body {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    body > div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 1vh;
+      background: black;
+      width: 18vw;
+      height: 18vh;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+<!--empty-->
+
+<script>
+  'use strict'
+  window.onload = function () {
+    const body = document.body
+    for (let i = 0; i < 18; ++i) {
+      let div = document.createElement('div')
+      let txt = document.createTextNode(i.toString())
+      div.appendChild(txt)
+      body.appendChild(div)
+    }
+  }
+</script>
+</body>
+</html>
