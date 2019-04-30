@@ -1,5 +1,7 @@
 # zhengrr 所知的 JavaScript
 
+> [![Should You Learn Python, C, or Ruby to Be a Top Coder?](./README-IMG.jpg)](https://byrslf.co/188a5bdc9f54 "Should You Learn Python, C, or Ruby to Be a Top Coder?")
+
 [*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript) (1995)
 
 ## 参考
