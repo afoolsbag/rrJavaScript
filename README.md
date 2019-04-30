@@ -8,7 +8,7 @@
 
 ["JavaScript 参考文档"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
 
-[*SRI Hash Generator*](https://srihash.org)
+[*SRI Hash Generator*](https://www.srihash.org)
 
 ## 风格
 

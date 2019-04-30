@@ -1,37 +1,59 @@
 'use strict'
 
-class UnitNum {
+/**
+ * 数值携单位（Number with Unit）
+ */
+class NumUnit {
+  /**
+   * 构造函数
+   * @param num  数值
+   * @param unit 单位
+   */
+  constructor (num = 0, unit = '') {
+    this.num = num
+    this.unit = unit
+  }
+
+  /**
+   * 数值
+   * @type {number}
+   */
   num
+
+  /**
+   * 单位
+   * @type {string}
+   */
   unit
 }
 
 /**
- * DRI 营养素（DRI Nutrient）
+ * 膳食参考摄入量营养素（DRI Nutrient）
  */
 class DriNut {
   /**
    * 估计平均需求（Estimated Average Requirements）
-   * @type {UnitNum}
+   * @type {NumUnit}
    */
-  ear = new UnitNum()
+  ear
 
   /**
    * 推荐膳食摄入（Recommended Dietary Allowances）
-   * @type {UnitNum}
+   * @type {NumUnit}
    */
-  rda = new UnitNum()
+  rda
 
   /**
    * 适当摄入（Adequate Intake）
-   * @type {UnitNum}
+   * @type {NumUnit}
    */
-  ai = new UnitNum()
+  ai
 
   /**
    * 耐受最高摄入（Tolerable Upper Intake Levels）
-   * @type {UnitNum}
+   * @type {NumUnit}
    */
-  ul = new UnitNum()
+  ul
 }
 
 /**
@@ -39,77 +61,285 @@ class DriNut {
  */
 class Dri {
   /**
-   * 适用于
+   * 适用于（Applicable）
    * @type {string}
    */
-  applicable = ''
-
-  // 宏量营养素
+  appl
 
   /**
-   * 水
+   * 能量需要量
    * @type {DriNut}
    */
-  water = new DriNut()
+  eer
 
   /**
-   * 碳水化合物
+   * 水（Water）
    * @type {DriNut}
    */
-  carbohydrate = new DriNut()  # 碳水化合物
-  added_sugar = DriNut()  # 添加糖
-  protein = DriNut()  # 蛋白质
-  fiber = DriNut()  # 纤维
-  fat = DriNut()  # 脂肪
-  linoleic_acid = DriNut()  # 亚油酸
-  alpha_linolenic_acid = DriNut()  # α-亚麻酸
-  cholesterol = DriNut()  # 胆固醇
-  trans_fatty_acids = DriNut()  # 反式脂肪酸
-  saturated_fatty_acids = DriNut()  # 饱和脂肪酸
+  wat
 
-  // 矿物质
+  /**
+   * 纤维（Fiber）
+   * @type {DriNut}
+   */
+  fib
 
-  f = DriNut()  # 氟元素，原子序数9
-  na = DriNut()  # 钠元素，原子序数11
-  mg = DriNut()  # 镁元素，原子序数12
-  p = DriNut()  # 磷元素，原子序数15
-  cl = DriNut()  # 氯元素，原子序数17
-  k = DriNut()  # 钾元素，原子序数19
-  ca = DriNut()  # 钙元素，原子序数20
-  cr = DriNut()  # 铬元素，原子序数24
-  mn = DriNut()  # 锰元素，原子序数25
-  fe = DriNut()  # 铁元素，原子序数26
-  cu = DriNut()  # 铜元素，原子序数29
-  zn = DriNut()  # 锌元素，原子序数30
-  se = DriNut()  # 硒元素，原子序数34
-  mo = DriNut()  # 钼元素，原子序数42
-  i = DriNut()  # 碘元素，原子序数53
+  /**
+   * 碳水化合物（Carbohydrate）
+   * @type {DriNut}
+   */
+  ch
 
-  // 维生素
+  /**
+   * 碳水化合物（Carbohydrate）
+   * 宏量营养素可接受范围（Acceptable Macronutrient Distribution Ranges）
+   * @type {number}
+   */
+  chAmdr
 
-  va = DriNut()  # 维生素A
-  vb1 = DriNut()  # 维生素B1，硫胺素
-  vb2 = DriNut()  # 维生素B2，核黄素
-  vb3 = DriNut()  # 维生素B3，烟酸
-  vb5 = DriNut()  # 维生素B5，泛酸
-  vb6 = DriNut()  # 维生素B6
-  vb7 = DriNut()  # 维生素B7，生物素
-  vb9 = DriNut()  # 维生素B9，叶酸
-  vb12 = DriNut()  # 维生素B12，氰钴胺
-  vc = DriNut()  # 维生素C
-  vd = DriNut()  # 维生素D
-  ve = DriNut()  # 维生素E，生育酚
-  vk = DriNut()  # 维生素K
-  choline = DriNut()  # 胆碱
+  /**
+   * 添加糖（Added Sugar）
+   * @type {DriNut}
+   */
+  as
+
+  /**
+   * 添加糖（Added Sugar）
+   * 宏量营养素可接受范围（Acceptable Macronutrient Distribution Ranges）
+   * @type {number}
+   */
+  asAmdr
+
+  /**
+   * 蛋白质（Protein）
+   * @type {DriNut}
+   */
+  prt
+
+  /**
+   * 脂肪（Fat）
+   * @type {DriNut}
+   */
+  fat
+
+  /**
+   * 脂肪（Fat）
+   * 宏量营养素可接受范围（Acceptable Macronutrient Distribution Ranges）
+   * @type {number}
+   */
+  fatAmdr
+
+  /**
+   * 亚油酸（Linoleic Acid）
+   * @type {DriNut}
+   */
+  la
+
+  /**
+   * α-亚麻酸（Alpha Linolenic Acid）
+   * @type {DriNut}
+   */
+  ala
+
+  /**
+   * 胆固醇（Cholesterol）
+   * @type {DriNut}
+   */
+  cho
+
+  /**
+   * 反式脂肪酸（Trans Fatty Acids）
+   * @type {DriNut}
+   */
+  tfa
+
+  /**
+   * 饱和脂肪酸（Saturated Fatty Acids）
+   * @type {DriNut}
+   */
+  sfa
+
+  /**
+   * 饱和脂肪酸（Saturated Fatty Acids）
+   * 宏量营养素可接受范围（Acceptable Macronutrient Distribution Ranges）
+   * @type {number}
+   */
+  sfaAmdr
+
+  /**
+   * 元素氟（Element F），原子序数9
+   * @type {DriNut}
+   */
+  eF
+
+  /**
+   * 元素钠（Element Na），原子序数11
+   * @type {DriNut}
+   */
+  eNa
+
+  /**
+   * 元素镁（Element Mg），原子序数12
+   * @type {DriNut}
+   */
+  eMg
+
+  /**
+   * 元素磷（Element P），原子序数15
+   * @type {DriNut}
+   */
+  eP
+
+  /**
+   * 元素氯（Element Cl），原子序数17
+   * @type {DriNut}
+   */
+  eCl
+
+  /**
+   * 元素钾（Element K），原子序数19
+   * @type {DriNut}
+   */
+  eK
+
+  /**
+   * 元素钙（Element Ca），原子序数20
+   * @type {DriNut}
+   */
+  eCa
+
+  /**
+   * 元素铬（Element Cr），原子序数24
+   * @type {DriNut}
+   */
+  eCr
+
+  /**
+   * 元素锰（Element Mn），原子序数25
+   * @type {DriNut}
+   */
+  eMn
+
+  /**
+   * 元素铁（Element Fe），原子序数26
+   * @type {DriNut}
+   */
+  eFe
+
+  /**
+   * 元素铜（Element Cu），原子序数29
+   * @type {DriNut}
+   */
+  eCu
+
+  /**
+   * 元素锌（Element Zn），原子序数30
+   * @type {DriNut}
+   */
+  eZn
+
+  /**
+   * 元素硒（Element Se），原子序数34
+   * @type {DriNut}
+   */
+  eSe
+
+  /**
+   * 元素钼（Element Mo），原子序数42
+   * @type {DriNut}
+   */
+  eMo
+
+  /**
+   * 元素碘（Element I），原子序数53
+   * @type {DriNut}
+   */
+  eI
+
+  /**
+   * 维生素A（Vitamin A）
+   * @type {DriNut}
+   */
+  vA
+
+  /**
+   * 维生素B1（Vitamin B1），硫胺素
+   * @type {DriNut}
+   */
+  vB1
+
+  /**
+   * 维生素B2（Vitamin B2），核黄素
+   * @type {DriNut}
+   */
+  vB2
+
+  /**
+   * 维生素B3（Vitamin B3），烟酸
+   * @type {DriNut}
+   */
+  vB3
+
+  /**
+   * 维生素B5（Vitamin B5），泛酸
+   * @type {DriNut}
+   */
+  vB5
+
+  /**
+   * 维生素B6（Vitamin B6）
+   * @type {DriNut}
+   */
+  vB6
+
+  /**
+   * 维生素B7（Vitamin B7），生物素
+   * @type {DriNut}
+   */
+  vB7
+
+  /**
+   * 维生素B9（Vitamin B9），叶酸
+   * @type {DriNut}
+   */
+  vB9
+
+  /**
+   * 维生素B12（Vitamin B12），氰钴胺
+   * @type {DriNut}
+   */
+  vB12
+
+  /**
+   * 维生素C（Vitamin C）
+   * @type {DriNut}
+   */
+  vC
+
+  /**
+   * 维生素D（Vitamin D）
+   * @type {DriNut}
+   */
+  vD
+
+  /**
+   * 维生素E（Vitamin E），生育酚
+   * @type {DriNut}
+   */
+  vE
+
+  /**
+   * 维生素K（Vitamin K）
+   * @type {DriNut}
+   */
+  vK
+
+  /**
+   * 胆碱（Choline）
+   * @type {DriNut}
+   */
+  chol
 }
 
-/*
-# coding: utf-8
-
-# 中国居民膳食营养素参考摄入量2013版，适用于男性（Male）18~49岁
-DRI13M1849 = Dri()
-DRI13M1849.ca.ear = 800 * mg / day
-
-if __name__ == '__main__':
-    print(DRI13M1849.ca.ear / (1 * mg / day))
-*/
+// 中国居民膳食营养素参考摄入量2013版，适用于男性（Male）18~49岁
+// DRI13M1849 = Dri()
