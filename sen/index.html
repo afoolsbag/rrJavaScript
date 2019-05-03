@@ -1,20 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-cmn-CN">
 <head>
     <meta charset="utf-8">
-    <title>运动与营养（Sports and Exercise Nutrition） </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
           crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="index.css">
+
+    <title>运动与营养（Sports and Exercise Nutrition）v0.1 </title>
 </head>
-<body lang='zh-cmn-CN'>
+<body>
 
-
+<div class="container-fluid" id="app">
+    <nav>
+        <ul class="nav nav-tabs" id="tabs" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="basket-tab" role="tab" data-toggle="tab"
+                   href="#basket" aria-controls="basket" aria-selected="true">篮子</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="macronutrients-tab" role="tab" data-toggle="tab"
+                   href="#macronutrients" aria-controls="profile" aria-selected="false">宏量营养素</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="minerals-tab" role="tab" data-toggle="tab"
+                   href="#minerals" aria-controls="contact" aria-selected="false">矿物质</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="vitamins-tab" role="tab" data-toggle="tab"
+                   href="#vitamins" aria-controls="contact" aria-selected="false">维生素</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="tab-content" id="tab-contents">
+        <div class="tab-pane fade show active" id="basket" role="tabpanel" aria-labelledby="home-tab">
+            <!-- TAB CONTENT BASKET -->
+        </div>
+        <div class="tab-pane fade" id="macronutrients" role="tabpanel" aria-labelledby="macronutrients-tab">
+            <!-- TAB CONTENT MACRONUTRIENTS -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col" rowspan="2"></th>
+                    <th scope="colgroup" colspan="5"><span>能量</span></th>
+                    <th scope="col" rowspan="2"><span>蛋白质</span></th>
+                </tr>
+                <tr>
+                    <th scope="col"><span>总量</span></th>
+                    <th scope="col"><span>碳水化合物</span></th>
+                    <th scope="col"><span>添加糖</span></th>
+                    <th scope="col"><span>脂肪</span></th>
+                    <th scope="col"><span>饱和脂肪酸</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="row"><span :title="dri.desc">{{ dri.id }}</span></th>
+                    <td>{{ dri.eer }}</td>
+                    <td>{{ dri.chAmdr }}</td>
+                    <td>{{ dri.sugAmdr }}</td>
+                    <td>{{ dri.fatAmdr }}</td>
+                    <td>{{ dri.sfaAmdr }}</td>
+                    <td>{{ dri.prt }}</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="minerals" role="tabpanel" aria-labelledby="minerals-tab">
+            <!-- TAB CONTENT MINERALS -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"><span>钙元素</span></th>
+                    <th scope="col"><span>磷元素</span></th>
+                    <th scope="col"><span>钾元素</span></th>
+                    <th scope="col"><span>钠元素</span></th>
+                    <th scope="col"><span>镁元素</span></th>
+                    <th scope="col"><span>氯元素</span></th>
+                    <th scope="col"><span>铁元素</span></th>
+                    <th scope="col"><span>碘元素</span></th>
+                    <th scope="col"><span>锌元素</span></th>
+                    <th scope="col"><span>硒元素</span></th>
+                    <th scope="col"><span>铜元素</span></th>
+                    <th scope="col"><span>氟元素</span></th>
+                    <th scope="col"><span>铬元素</span></th>
+                    <th scope="col"><span>锰元素</span></th>
+                    <th scope="col"><span>钼元素</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="row"><span :title="dri.desc">{{ dri.id }}</span></th>
+                    <td>{{ dri.eCa }}</td>
+                    <td>{{ dri.eP }}</td>
+                    <td>{{ dri.eK }}</td>
+                    <td>{{ dri.eNa }}</td>
+                    <td>{{ dri.eMg }}</td>
+                    <td>{{ dri.eCl }}</td>
+                    <td>{{ dri.eFe }}</td>
+                    <td>{{ dri.eI }}</td>
+                    <td>{{ dri.eZn }}</td>
+                    <td>{{ dri.eSe }}</td>
+                    <td>{{ dri.eCu }}</td>
+                    <td>{{ dri.eF }}</td>
+                    <td>{{ dri.eCr }}</td>
+                    <td>{{ dri.eMn }}</td>
+                    <td>{{ dri.eMo }}</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+        <div class="tab-pane fade" id="vitamins" role="tabpanel" aria-labelledby="vitamins-tab">
+            <!-- TAB CONTENT VITAMINS -->
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col"><span title="视黄醇">维生素A</span></th>
+                    <th scope="col"><span>维生素D</span></th>
+                    <th scope="col"><span title="生育酚">维生素E</span></th>
+                    <th scope="col"><span title="叶绿醌">维生素K</span></th>
+                    <th scope="col"><span title="硫胺素">维生素B<sub>1</sub></span></th>
+                    <th scope="col"><span title="核黄素">维生素B<sub>2</sub></span></th>
+                    <th scope="col"><span title="吡哆醇">维生素B<sub>6</sub></span></th>
+                    <th scope="col"><span title="氰钴胺">维生素B<sub>12</sub></span></th>
+                    <th scope="col"><span title="泛酸">维生素B<sub>5</sub></span></th>
+                    <th scope="col"><span title="叶酸">维生素B<sub>9</sub></span></th>
+                    <th scope="col"><span title="烟酸">维生素B<sub>3</sub></span></th>
+                    <th scope="col"><span title="胆碱">维生素B<sub>4</sub></span></th>
+                    <th scope="col"><span title="生物素">维生素B<sub>7</sub></span></th>
+                    <th scope="col"><span title="抗坏血酸">维生素C</span></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th scope="row"><span :title="dri.desc">{{ dri.id }}</span></th>
+                    <td>{{ dri.vA }}</td>
+                    <td>{{ dri.vD }}</td>
+                    <td>{{ dri.vE }}</td>
+                    <td>{{ dri.vK }}</td>
+                    <td>{{ dri.vB1 }}</td>
+                    <td>{{ dri.vB2 }}</td>
+                    <td>{{ dri.vB6 }}</td>
+                    <td>{{ dri.vB12 }}</td>
+                    <td>{{ dri.vB5 }}</td>
+                    <td>{{ dri.vB9 }}</td>
+                    <td>{{ dri.vB3 }}</td>
+                    <td>{{ dri.vB4 }}</td>
+                    <td>{{ dri.vB7 }}</td>
+                    <td>{{ dri.vC }}</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.4.0.min.js"
         integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"
+        integrity="sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"
+        integrity="sha384-8t+aLluUVnn5SPPG/NbeZCH6TWIvaXIm/gDbutRvtEeElzxxWaZN+G/ZIEdI/f+y"
+        crossorigin="anonymous"></script>
+<script src="index-utils.js"></script>
+<script src="index-dri.js"></script>
 <script src="index.js"></script>
 </body>
 </html>

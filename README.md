@@ -14,6 +14,8 @@
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
+[BEM](http://getbem.com/)
+
 ## 指南
 
 / ["JavaScript 指南"](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
@@ -23,24 +25,22 @@
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
+/ [*Babel*](https://babeljs.io/)
 / [*Bootstrap*](https://getbootstrap.com/)
 / [*Bootstrap 中文网*](http://www.bootcss.com/)
-/ [*jQuery*](https://jquery.com/)
-
+/ [*Dart*](https://dartlang.org/)
+/ [*CoffeeScript*](https://coffeescript.org/)
 / [*Electron*](https://electronjs.org/)
+/ [*Font Awesome*](https://fontawesome.com/)
+/ [*Grunt*](https://gruntjs.com/)
+/ [*gulp*](https://gulpjs.com/)
 / [*Jest*](https://jestjs.io/)
+/ [*jQuery*](https://jquery.com/)
 / [*JSDoc*](http://usejsdoc.org/)
 / [*Node.js*](https://nodejs.org/)
-
-/ [*Babel*](https://babeljs.io/)
-/ [*CoffeeScript*](https://coffeescript.org/)
-/ [*Dart*](https://dartlang.org/)
-/ [*TypeScript*](https://www.typescriptlang.org/)
-
-/ [*gulp*](https://gulpjs.com/)
-/ [*Grunt*](https://gruntjs.com/)
 / [*npm*](https://npmjs.com/)
-
+/ [*TypeScript*](https://www.typescriptlang.org/)
+/ [*Vue*](https://vuejs.org/)
 / [*WebStorm*](https://jetbrains.com/webstorm/)
 
 ## Hypertext Markup Language
