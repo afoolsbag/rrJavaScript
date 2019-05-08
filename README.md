@@ -1,31 +1,58 @@
 # zhengrr 所知的 JavaScript
 
+[*GitHub Pages*](https://afoolsbag.github.io/rrJavaScript/)
+
 > [![Should You Learn Python, C, or Ruby to Be a Top Coder?](./README-IMG.jpg)](https://byrslf.co/188a5bdc9f54 "Should You Learn Python, C, or Ruby to Be a Top Coder?")
 
-[*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript) (1995)
+[*WHATWG*](https://whatwg.org/ "Web Hypertext Application Technology Working Group")
+/ [*HTML*](https://w3.org/html/ "Hypertext Markup Language"),
+  [*CSS*](https://w3.org/Style/CSS/ "Cascading Style Sheets"),
+  [*JS*](https://developer.mozilla.org/docs/Web/JavaScript "JavaScript, 1995")
 
 ## 参考
 
-["JavaScript 参考文档"](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
-
-[*SRI Hash Generator*](https://www.srihash.org)
+[“JavaScript 参考文档”](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
 
 ## 风格
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-[BEM](http://getbem.com/)
+[*JSDoc*](http://usejsdoc.org/)
+
+[*BEM*](http://getbem.com/)
 
 ## 指南
 
-/ ["JavaScript 指南"](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
-/ ["JavaScript 教程"](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
+/ [“JavaScript 指南”](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
+/ [“JavaScript 教程”](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
 
 ## Awesome
 
-[*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
+/ [*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
+/ [*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
+/ [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
-/ [*Babel*](https://babeljs.io/)
+/ [*Node.js*](https://nodejs.org/) <sub>(
+    [*cmn-Hans*](http://nodejs.cn/),
+    [*npm.js*](https://npmjs.com/),
+    [*-cmn-Hans*](https://npmjs.com.cn/) )</sub>
+/ [*Browserify*](http://browserify.org/),
+  [*grunt.js*](https://gruntjs.com/),
+  [*gulp.js*](https://gulpjs.com/) <sub>(
+    [*cmn-Hans*](https://gulpjs.com.cn/) )</sub>,
+  [*webpack.js*](https://webpackjs.com/)
+
+/ [*Less*](http://lesscss.org/)
+/ [*Sass*](https://sass-lang.com/)
+/ [*Stylus*](http://stylus-lang.com/)
+
+/ [*Babel*](https://babeljs.io/) <sub>(
+    [*cmn-Hans*](https://babeljs.cn/) )</sub>
+/ [*CoffeeScript*](https://coffeescript.org/)
+/ [*TypeScript*](https://www.typescriptlang.org/) <sub>(
+    [*cmn-Hans*](https://www.tslang.cn/) )</sub>
+
+/ [*SRI Hash Generator*](https://www.srihash.org)
 / [*Bootstrap*](https://getbootstrap.com/)
 / [*Bootstrap 中文网*](http://www.bootcss.com/)
 / [*Dart*](https://dartlang.org/)
@@ -36,29 +63,8 @@
 / [*gulp*](https://gulpjs.com/)
 / [*Jest*](https://jestjs.io/)
 / [*jQuery*](https://jquery.com/)
-/ [*JSDoc*](http://usejsdoc.org/)
-/ [*Node.js*](https://nodejs.org/)
-/ [*npm*](https://npmjs.com/)
-/ [*TypeScript*](https://www.typescriptlang.org/)
 / [*Vue*](https://vuejs.org/)
 / [*WebStorm*](https://jetbrains.com/webstorm/)
-
-## Hypertext Markup Language
-
-/ [*Hypertext Markup Language*](https://w3.org/html/)
-/ [*Web Hypertext Application Technology Working Group*](https://whatwg.org/)
-
-[*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
-
-## Cascading Style Sheets
-
-/ [*Cascading Style Sheets*](https://www.w3.org/Style/CSS/)
-
-[*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
-
-/ [*Less*](http://lesscss.org/)
-/ [*Sass*](https://sass-lang.com/)
-/ [*Stylus*](http://stylus-lang.com/)
 
 ## 许可
 

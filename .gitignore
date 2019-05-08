@@ -1,11 +1,10 @@
 # zhengrr
-# 2018-03-03 – 2018-11-14
-# The Unlicense
+# 2018-03-03 – 2019-05-08
+# Unlicense
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/Linux.gitignore
-# ver. 2016-09-20
-#---------------------------------------------------------------------------
+# 2016-09-20
 
 *~
 
@@ -21,10 +20,9 @@
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/macOS.gitignore
-# ver. 2017-07-07
-#---------------------------------------------------------------------------
+# 2017-07-07
 
 # General
 .DS_Store
@@ -54,10 +52,9 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/Windows.gitignore
-# ver. 2018-04-08
-#---------------------------------------------------------------------------
+# 2018-04-08
 
 # Windows thumbnail cache files
 Thumbs.db
@@ -83,10 +80,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
-# ver. 2018-09-15
-#---------------------------------------------------------------------------
+# 2018-09-15
 
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and WebStorm
 # Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
@@ -155,10 +151,9 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
-#===========================================================================
+#-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Node.gitignore
-# ver. 2018-10-20
-#---------------------------------------------------------------------------
+# 2019-03-18
 
 # Logs
 logs
@@ -166,6 +161,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -218,6 +217,7 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -232,14 +232,15 @@ typings/
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
 
 # FuseBox cache
 .fusebox/
 
-#===========================================================================
-# 自定义
-#---------------------------------------------------------------------------
+# DynamoDB Local files
+.dynamodb/
+
+#-------------------------------------------------------------------------------
 
 dist/
 package-lock.json
