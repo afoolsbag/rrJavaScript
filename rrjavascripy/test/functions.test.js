@@ -1,7 +1,9 @@
 /**
  * @file
  *
- * @version 2018-11-09
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions 函数}
+ *
+ * @version 2019-11-24
  * @since 2018-11-09
  * @author zhengrr
  * @license Unlicense

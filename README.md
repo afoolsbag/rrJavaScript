@@ -11,60 +11,53 @@
 
 ## 参考
 
-[“JavaScript 参考文档”](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
-
 ## 风格
-
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-
-[*JSDoc*](http://usejsdoc.org/)
 
 [*BEM*](http://getbem.com/)
 
 ## 指南
 
 / [“JavaScript 指南”](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
-/ [“JavaScript 教程”](https://www.liaoxuefeng.com/wiki/001434446689867b27157e896e74d51a89c25cc8b43bdb3000). *廖雪峰的官方网站*.
+/ [“JavaScript 教程”](https://liaoxuefeng.com/wiki/1022910821149312). *廖雪峰的官方网站*.
 
 ## Awesome
 
 / [*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
 / [*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
-/ [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
-/ [*Node.js*](https://nodejs.org/) <sub>(
+/ [*Node.js*](https://nodejs.org/) <sub>
     [*cmn-Hans*](http://nodejs.cn/),
     [*npm.js*](https://npmjs.com/),
-    [*-cmn-Hans*](https://npmjs.com.cn/) )</sub>
+    [*-cmn-Hans*](https://npmjs.com.cn/) </sub>
 / [*Browserify*](http://browserify.org/),
   [*grunt.js*](https://gruntjs.com/),
-  [*gulp.js*](https://gulpjs.com/) <sub>(
-    [*cmn-Hans*](https://gulpjs.com.cn/) )</sub>,
+  [*gulp.js*](https://gulpjs.com/) <sub>
+    [*cmn-Hans*](https://gulpjs.com.cn/) </sub>,
   [*webpack.js*](https://webpackjs.com/)
 
 / [*Less*](http://lesscss.org/)
 / [*Sass*](https://sass-lang.com/)
 / [*Stylus*](http://stylus-lang.com/)
 
-/ [*Babel*](https://babeljs.io/) <sub>(
-    [*cmn-Hans*](https://babeljs.cn/) )</sub>
+/ [*Babel*](https://babeljs.io/) <sub>
+    [*cmn-Hans*](https://babeljs.cn/) </sub>
 / [*CoffeeScript*](https://coffeescript.org/)
-/ [*TypeScript*](https://www.typescriptlang.org/) <sub>(
-    [*cmn-Hans*](https://www.tslang.cn/) )</sub>
+/ [*TypeScript*](https://www.typescriptlang.org/) <sub>
+    [*cmn-Hans*](https://www.tslang.cn/) </sub>
 
 / [*SRI Hash Generator*](https://www.srihash.org)
-/ [*Bootstrap*](https://getbootstrap.com/)
-/ [*Bootstrap 中文网*](http://www.bootcss.com/)
+/ [*Bootstrap*](https://getbootstrap.com/) <sub>
+    [*-中文网*](http://www.bootcss.com/) </sub>
 / [*Dart*](https://dartlang.org/)
 / [*CoffeeScript*](https://coffeescript.org/)
-/ [*Electron*](https://electronjs.org/)
 / [*Font Awesome*](https://fontawesome.com/)
 / [*Grunt*](https://gruntjs.com/)
 / [*gulp*](https://gulpjs.com/)
 / [*Jest*](https://jestjs.io/)
 / [*jQuery*](https://jquery.com/)
 / [*Vue*](https://vuejs.org/)
-/ [*WebStorm*](https://jetbrains.com/webstorm/)
+/ [*WebStorm*](https://jetbrains.com/webstorm/) <sub>
+    [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm) </sub>
 
 ## 许可
 

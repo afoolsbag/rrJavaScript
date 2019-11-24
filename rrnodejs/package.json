@@ -1,15 +1,12 @@
 {
-  "name": "rrjavascript",
+  "name": "rrnodejs",
   "version": "2019.11.23",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
+  "main": "main.js",
   "scripts": {
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@types/jest": "^24.0.23",
-    "jest": "^24.9.0"
+    "start": "node ."
   },
   "private": true
 }
