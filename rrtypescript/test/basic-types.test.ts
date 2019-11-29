@@ -1,7 +1,9 @@
 /**
- * @file
+ * @file 基础类型
  *
- * @version 2018-11-10
+ * @see {@link https://typescriptlang.org/docs/handbook/basic-types.html}
+ *
+ * @version 2019-11-29
  * @since 2018-11-10
  * @author zhengrr
  * @license Unlicense
@@ -9,63 +11,83 @@
 
 'use strict';
 
+/**
+ * 真假值
+ */
 test('boolean', () => {
-    const b: boolean = false;
-    expect(b).toBe(false);
+    let bool: boolean = false;
+    expect(typeof bool).toBe('boolean');
 });
 
+/**
+ * 数字
+ */
 test('number', () => {
-    const n: number = 0;
-    expect(n).toBe(0);
+    let num: number = 1337;
+    expect(typeof num).toBe('number');
 });
 
+/**
+ * 字符串
+ */
 test('string', () => {
-    const s: string = 'love you';
-    expect(s).toBe('love you');
+    let str: string = 'love you';
+    expect(typeof str).toBe('string');
 });
 
+/**
+ * 数组
+ */
 test('array', () => {
-    const a1: number[] = [6, 6, 6];
-    expect(a1).toEqual([6, 6, 6]);
+    let arr1: number[] = [1, 3, 3, 7];
+    expect(arr1).toBeInstanceOf(Array);
 
-    const a2: Array<number> = [6, 6, 6];
-    expect(a2).toEqual([6, 6, 6]);
+
+    let arr2: Array<number> = [1, 3, 3, 7];
+    expect(arr2).toBeInstanceOf(Array);
 });
 
+/**
+ * 元组
+ */
 test('tuple', () => {
-    const t: [number, boolean] = [1, true];
-    expect(t[0]).toBe(1);
-    expect(t[1]).toBe(true);
+    const tup: [number, boolean] = [1337, true];
+    expect(tup).toBeInstanceOf(Array);
 });
 
+/**
+ * 枚举
+ */
 test('enum', () => {
-    enum Enum {Elem1, Elem2, Elem3}
+    enum Enum {Val1, Val2, Val3}
 
-    const e: Enum = Enum.Elem1;
-    expect(e).toBe(Enum.Elem1);
+    const e: Enum = Enum.Val1;
+    expect(typeof e).toBe('number');
 });
 
+/**
+ * 任意
+ */
 test('any', () => {
-    let a: any = 1;
-    expect(a).toBe(1);
-    a = '1';
-    expect(a).toBe('1');
-    a = true;
-    expect(a).toBe(true);
+    let x: any;
+    expect(x).toBeUndefined();
 });
 
-test('undefined, null & void', () => {
-    const u: undefined = undefined;
-    expect(u).toBeUndefined();
+/**
+ * Void, Null & Undefined
+ */
+test('void, null & undefined', () => {
+    const undef: undefined = undefined;
+    expect(undef).toBeUndefined();
 
-    const n: null = null;
-    expect(n).toBeNull();
+    const nul: null = null;
+    expect(nul).toBeNull();
 
-    const v1: void = undefined;
-    expect(v1).toBeUndefined();
+    const void1: void = undefined;
+    expect(void1).toBeUndefined();
 
-    const v2: void = null;
-    expect(v2).toBeNull();
+    const void2: void = null;
+    expect(void2).toBeNull();
 });
 
 test('never', () => {

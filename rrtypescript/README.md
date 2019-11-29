@@ -1,6 +1,7 @@
 # zhengrr 所知的 TypeScript
 
-[*TypeScript*](https://typescriptlang.org/)
+[*TypeScript*](https://typescriptlang.org/) <sub>
+    [*cmn-Hans*](https://www.tslang.cn/) </sub>
 
 ## 参考
 

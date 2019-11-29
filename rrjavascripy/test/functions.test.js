@@ -1,9 +1,9 @@
 /**
  * @file
  *
- * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions 函数}
+ * @see {@link https://developer.mozilla.org/docs/Glossary/Function 函数}
  *
- * @version 2019-11-24
+ * @version 2019-11-29
  * @since 2018-11-09
  * @author zhengrr
  * @license Unlicense
@@ -103,7 +103,7 @@ test('parameters', () => {
 })
 
 /**
- * 胖箭头函数。
+ * 箭头函数。
  */
 test('arrow function', () => {
   const af0p1e = () => 1 + 2 + 3

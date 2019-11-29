@@ -35,20 +35,29 @@ npm set registry https://registry.npm.taobao.org/  # 淘宝镜像
 npm config list [-l]
 npm c list [-l]
 
+# 安装
+
 npm install [--global] [--verbose] <package>
-npm i [-g] [--verbose] <package>
+npm i [-g] [--verbose] <pkg>
 
 npm install --save[-prod] <package>
-npm i -P <package>
+npm i -P <pkg>
 
 npm install --save-dev <package>
-npm i -D <package>
+npm i -D <pkg>
 
 npm install --save-bundle <package>
-npm i -B <package>
+npm i -B <pkg>
 
 npm install --save-optional <package>
-npm i -O <package>
+npm i -O <pkg>
+
+# 升级
+
+npm update [--global] <package>
+npm up [-g] <pkg>
+
+# 卸载
 
 npm remove [--global] <package>
 npm r [-g] <package>

@@ -1,7 +1,21 @@
 # zhengrr 所知的 JavaScript
 
 [*JavaScript*](https://developer.mozilla.org/docs/Web/JavaScript "JavaScript, 1995")
-  
+
+[*ECMA-262*](http://ecma-international.org/publications/standards/Ecma-262.htm)
+
+*   *ECMAScript 10* (2019-06)
+*   *ECMAScript 9* (2018-06)
+*   *ECMAScript 8* (2017-06)
+*   *ECMAScript 7* (2016-06)
+*   *ECMAScript 6* (2015-06)
+*   *ECMAScript 5.1* / [*ISO/IEC 16262:2011*](https://iso.org/standard/55755.html) (2011-06)
+*   *ECMAScript 5* (2009-12)
+*   *ECMAScript 4* (放弃)
+*   *ECMAScript 3* (1999-12)
+*   *ECMAScript 2* / [*ISO/IEC 16262:1998*](https://iso.org/standard/29696.html) (1998-06)
+*   *ECMAScript* (1997-06)
+
 ## 参考
 
 [“JavaScript 参考文档”](https://developer.mozilla.org/docs/Web/JavaScript/Reference). *MDN*.
