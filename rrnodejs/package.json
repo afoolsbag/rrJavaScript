@@ -1,12 +1,29 @@
 {
   "name": "rrnodejs",
-  "version": "2019.11.23",
+  "version": "2019.12.02",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "main": "main.js",
+  "main": "src/main.ts",
   "scripts": {
-    "start": "node ."
+    "start": "ts-node .",
+    "test": "jest"
   },
-  "private": true
+  "dependencies": {
+    "better-sqlite3": "^5.4.3"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^5.4.0",
+    "@types/jest": "^23.3.14",
+    "@types/node": "^12.12.14",
+    "jest": "^23.6.0",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  },
+  "private": true,
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
 }

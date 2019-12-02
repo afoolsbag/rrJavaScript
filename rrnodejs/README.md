@@ -1,11 +1,9 @@
-# zhengrr 所知的 TypeScript
+# zhengrr 所知的 Node.js
 
-[*TypeScript*](https://www.typescriptlang.org/) <sub>
-    [*cmn-Hans*](https://www.tslang.cn/) </sub>
-
-## 参考
-
-[“Documentation”](https://typescriptlang.org/docs/home.html). *TypeScript*.
+[*Node.js*](https://nodejs.org/) <sub>
+    [*cmn-Hans*](http://nodejs.cn/),
+    [*npm.js*](https://npmjs.com/),
+    [*-cmn-Hans*](https://npmjs.com.cn/) </sub>
 
 ## 许可
 

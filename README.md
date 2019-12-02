@@ -25,10 +25,6 @@
 / [*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
 / [*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
 
-/ [*Node.js*](https://nodejs.org/) <sub>
-    [*cmn-Hans*](http://nodejs.cn/),
-    [*npm.js*](https://npmjs.com/),
-    [*-cmn-Hans*](https://npmjs.com.cn/) </sub>
 / [*Browserify*](http://browserify.org/),
   [*grunt.js*](https://gruntjs.com/),
   [*gulp.js*](https://gulpjs.com/) <sub>
@@ -42,8 +38,6 @@
 / [*Babel*](https://babeljs.io/) <sub>
     [*cmn-Hans*](https://babeljs.cn/) </sub>
 / [*CoffeeScript*](https://coffeescript.org/)
-/ [*TypeScript*](https://www.typescriptlang.org/) <sub>
-    [*cmn-Hans*](https://www.tslang.cn/) </sub>
 
 / [*SRI Hash Generator*](https://www.srihash.org)
 / [*Bootstrap*](https://getbootstrap.com/) <sub>

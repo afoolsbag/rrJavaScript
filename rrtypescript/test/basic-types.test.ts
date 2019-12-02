@@ -1,9 +1,10 @@
 /**
  * @file 基础类型
  *
- * @see {@link https://typescriptlang.org/docs/handbook/basic-types.html}
+ * @see {@link https://www.typescriptlang.org/docs/handbook/basic-types.html Basic Types}
+ * @see {@link https://www.tslang.cn/docs/handbook/basic-types.html 基础类型}
  *
- * @version 2019-11-29
+ * @version 2019-12-02
  * @since 2018-11-10
  * @author zhengrr
  * @license Unlicense
@@ -15,7 +16,7 @@
  * 真假值
  */
 test('boolean', () => {
-    let bool: boolean = false;
+    const bool: boolean = false;
     expect(typeof bool).toBe('boolean');
 });
 
@@ -23,7 +24,7 @@ test('boolean', () => {
  * 数字
  */
 test('number', () => {
-    let num: number = 1337;
+    const num: number = 1337;
     expect(typeof num).toBe('number');
 });
 
@@ -31,7 +32,7 @@ test('number', () => {
  * 字符串
  */
 test('string', () => {
-    let str: string = 'love you';
+    const str: string = 'love you';
     expect(typeof str).toBe('string');
 });
 
@@ -39,12 +40,14 @@ test('string', () => {
  * 数组
  */
 test('array', () => {
-    let arr1: number[] = [1, 3, 3, 7];
+    const arr1: number[] = [1, 3, 3, 7];
     expect(arr1).toBeInstanceOf(Array);
 
-
-    let arr2: Array<number> = [1, 3, 3, 7];
+    const arr2: Array<number> = [1, 3, 3, 7];
     expect(arr2).toBeInstanceOf(Array);
+
+    const arr3: ReadonlyArray<number> = [1, 3, 3, 7];
+    expect(arr3).toBeInstanceOf(Array)
 });
 
 /**
@@ -74,42 +77,37 @@ test('any', () => {
 });
 
 /**
- * Void, Null & Undefined
+ * Void, Null, Undefined 和 Never
  */
-test('void, null & undefined', () => {
+test('void, null, undefined & never', () => {
+    const void1: void = undefined;
+    expect(void1).toBeUndefined();
+
+    // OK if `--strictNullChecks` is not given:
+    // const void2: void = null;
+    // expect(void2).toBeNull();
+
     const undef: undefined = undefined;
     expect(undef).toBeUndefined();
 
     const nul: null = null;
     expect(nul).toBeNull();
-
-    const void1: void = undefined;
-    expect(void1).toBeUndefined();
-
-    const void2: void = null;
-    expect(void2).toBeNull();
 });
 
-test('never', () => {
-    function error(message: string): never {
-        throw new Error(message);
-    }
-
-    try {
-        error('Never');
-    } catch (e) {
-        expect(e.name).toBe('Error');
-        expect(e.message).toBe('Never');
-    }
-});
-
+/**
+ * 对象
+ */
 test('object', () => {
     const o: object = {};
     expect(o).toEqual({});
 });
 
+/**
+ * 类型断言
+ * 编译器不对此进行类型检查
+ */
 test('type assertions', () => {
-    const ly: any = 'love you';
-    expect((<string>ly).length).toBe(8);
-    expect((ly as string).length).toBe(8);
+    const x: any = 'love you';
+    expect((<string>x).length).toBe(8);
+    expect((x as string).length).toBe(8);
 });
