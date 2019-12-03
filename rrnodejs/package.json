@@ -6,6 +6,7 @@
   "author": "zhengrr",
   "main": "src/main.ts",
   "scripts": {
+    "lint": "eslint --ext .ts .",
     "start": "ts-node .",
     "test": "jest"
   },
@@ -16,6 +17,9 @@
     "@types/better-sqlite3": "^5.4.0",
     "@types/jest": "^23.3.14",
     "@types/node": "^12.12.14",
+    "@typescript-eslint/eslint-plugin": "^2.10.0",
+    "@typescript-eslint/parser": "^2.10.0",
+    "eslint": "^6.7.2",
     "jest": "^23.6.0",
     "ts-jest": "^23.10.5",
     "ts-node": "^8.5.4",
