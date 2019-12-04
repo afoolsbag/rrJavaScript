@@ -4,7 +4,7 @@
  * @see {@link https://www.typescriptlang.org/docs/handbook/classes.html Classes}
  * @see {@link https://www.tslang.cn/docs/handbook/classes.html 类}
  *
- * @version 2019-12-02
+ * @version 2019-12-04
  * @since 2019-12-02
  * @author zhengrr
  * @license Unlicense
@@ -16,15 +16,9 @@
  * 自定义类
  */
 class Clazz {
-    /**
-     * 属性
-     */
-    prop1: string;
-
-    /**
-     * 构造函数
-     */
-    constructor(prop1: string) {
-        this.prop1 = prop1;
-    }
 }
+
+test('class', () => {
+    const obj = new Clazz();
+    expect(obj).toBeInstanceOf(Clazz);
+});

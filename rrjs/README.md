@@ -36,7 +36,9 @@
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
 
 *   [*Babel*](https://babeljs.io/) <sub>
-    [*cmn-Hans*](https://babeljs.cn/) </sub>
+        [*cmn-Hans*](https://babeljs.cn/) </sub>
+*   [*ESLint*](https://eslint.org/) <sub>
+        [*cmn-Hans*](https://eslint.bootcss.com/) </sub>
 
 ## 许可
 

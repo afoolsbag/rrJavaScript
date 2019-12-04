@@ -3,7 +3,7 @@
  *
  * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Data_structures 数据类型和数据结构}
  *
- * @version 2019-11-29
+ * @version 2019-12-04
  * @since 2018-11-08
  * @author zhengrr
  * @license Unlicense
@@ -13,7 +13,7 @@
 
 /**
  * 未定义
- * @see {@link https://developer.mozilla.org/docs/Glossary/Undefined}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined}
  */
 test('undefined', () => {
   let x
@@ -26,26 +26,26 @@ test('undefined', () => {
 
 /**
  * 真假值
- * @see {@link https://developer.mozilla.org/docs/Glossary/Boolean}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean}
  */
 test('boolean', () => {
-  let bool = false
+  const bool = false
   expect(typeof bool).toBe('boolean')
 })
 
 /**
  * 数字
- * @see {@link https://developer.mozilla.org/docs/Glossary/Number}
- * @see {@link https://developer.mozilla.org/docs/Glossary/Infinity}
- * @see {@link https://developer.mozilla.org/docs/Glossary/NaN}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Infinity}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/NaN}
  */
 test('number', () => {
   // number
-  let num = 0
+  const num = 0
   expect(typeof num).toBe('number')
 
   // (+/-) Infinity
-  let posInf = Infinity
+  const posInf = Infinity
   expect(typeof posInf).toBe('number')
   // 判定方法
   expect(posInf).toBe(Infinity)
@@ -53,49 +53,51 @@ test('number', () => {
   expect(posInf === Infinity).toBeTruthy()
 
   // NaN
-  let nan = NaN
+  const nan = NaN
   expect(typeof nan).toBe('number')
   // 判定方法
   expect(nan).toBeNaN()
   // 即
-  expect(isNaN(nan)).toBeTruthy()  // JavaScript 中唯一自身与自身不相等的值
+  expect(isNaN(nan)).toBeTruthy() // JavaScript 中唯一自身与自身不相等的值
 })
 
 /**
  * 大整数
- * @see {@link https://developer.mozilla.org/docs/Glossary/BigInt}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt}
  */
 test('bigint', () => {
-  let big = BigInt(0)
+  // eslint-disable-next-line no-undef
+  const big = BigInt(0)
   expect(typeof big).toBe('bigint')
 })
 
 /**
  * 字符串
- * @see {@link https://developer.mozilla.org/docs/Glossary/String}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String}
  */
 test('string', () => {
-  let str = ''
+  const str = ''
   expect(typeof str).toBe('string')
 })
 
 /**
  * 符号
- * @see {@link https://developer.mozilla.org/docs/Glossary/Symbol}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol}
  */
 test('symbol', () => {
-  let sym = Symbol()
+  // eslint-disable-next-line symbol-description
+  const sym = Symbol()
   expect(typeof sym).toBe('symbol')
 })
 
 /**
  * 对象
- * @see {@link https://developer.mozilla.org/docs/Glossary/Null}
- * @see {@link https://developer.mozilla.org/docs/Glossary/Object}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/null}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object}
  */
 test('object', () => {
   // null
-  let nul = null
+  const nul = null
   expect(typeof nul).toBe('object')
   expect(nul).not.toBeInstanceOf(Object)
   // 判定方法
@@ -104,14 +106,14 @@ test('object', () => {
   expect(nul === null).toBeTruthy()
 
   // object
-  let obj = {}
+  const obj = {}
   expect(typeof obj).toBe('object')
   expect(obj).toBeInstanceOf(Object)
 })
 
 /**
  * 对象：数组
- * @see {@link https://developer.mozilla.org/docs/Glossary/Function}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array}
  */
 test('object-array', () => {
   const arr = []
@@ -122,7 +124,7 @@ test('object-array', () => {
 
 /**
  * 对象：正则表达式
- * @see {@link https://developer.mozilla.org/docs/Glossary/RegExp}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp}
  */
 test('object-regexp', () => {
   const regex = /regex/
@@ -133,7 +135,7 @@ test('object-regexp', () => {
 
 /**
  * 对象：函数
- * @see {@link https://developer.mozilla.org/docs/Glossary/Function}
+ * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function}
  */
 test('object-function', () => {
   const f = function () {}

@@ -4,7 +4,7 @@
  * @see {@link https://www.typescriptlang.org/docs/handbook/basic-types.html Basic Types}
  * @see {@link https://www.tslang.cn/docs/handbook/basic-types.html 基础类型}
  *
- * @version 2019-12-02
+ * @version 2019-12-04
  * @since 2018-11-10
  * @author zhengrr
  * @license Unlicense
@@ -62,9 +62,10 @@ test('tuple', () => {
  * 枚举
  */
 test('enum', () => {
-    enum Enum {Val1, Val2, Val3}
+    // eslint-disable-next-line no-unused-vars
+    enum Enum {Val0, Val1, Val2}
 
-    const e: Enum = Enum.Val1;
+    const e: Enum = Enum.Val0;
     expect(typeof e).toBe('number');
 });
 

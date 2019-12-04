@@ -4,7 +4,7 @@
  * @see {@link https://www.typescriptlang.org/docs/handbook/variable-declarations.html Variable Declarations}
  * @see {@link https://www.tslang.cn/docs/handbook/variable-declarations.html 变量声明}
  *
- * @version 2019-12-02
+ * @version 2019-12-04
  * @since 2019-12-02
  * @author zhengrr
  * @license Unlicense
@@ -16,6 +16,7 @@
  * 函数作用域
  */
 test('var', () => {
+    // eslint-disable-next-line no-unused-vars
     var x: never;
 });
 
@@ -23,6 +24,7 @@ test('var', () => {
  * 块作用域
  */
 test('let', () => {
+    // eslint-disable-next-line no-unused-vars
     let x: never;
 });
 
@@ -30,6 +32,7 @@ test('let', () => {
  * 块作用域常量
  */
 test('const', () => {
+    // eslint-disable-next-line no-unused-vars
     const x: object = {};
 });
 
