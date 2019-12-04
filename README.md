@@ -4,32 +4,11 @@
 
 > [![Should You Learn Python, C, or Ruby to Be a Top Coder?](./README-IMG.jpg)](https://byrslf.co/188a5bdc9f54 "Should You Learn Python, C, or Ruby to Be a Top Coder?")
 
-[*WHATWG*](https://whatwg.org/ "Web Hypertext Application Technology Working Group")
-/ [*HTML*](https://w3.org/html/ "Hypertext Markup Language"),
-  [*CSS*](https://w3.org/Style/CSS/ "Cascading Style Sheets"),
-  [*JS*](https://developer.mozilla.org/docs/Web/JavaScript "JavaScript, 1995")
-
-## 参考
-
-## 风格
-
-[*BEM*](http://getbem.com/)
-
-## 指南
-
-/ [“JavaScript 指南”](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
-/ [“JavaScript 教程”](https://liaoxuefeng.com/wiki/1022910821149312). *廖雪峰的官方网站*.
-
 ## Awesome
 
 / [*Awesome HTML5*](https://github.com/diegocard/awesome-html5)
 / [*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
 
-/ [*Browserify*](http://browserify.org/),
-  [*grunt.js*](https://gruntjs.com/),
-  [*gulp.js*](https://gulpjs.com/) <sub>
-    [*cmn-Hans*](https://gulpjs.com.cn/) </sub>,
-  [*webpack.js*](https://webpackjs.com/)
 
 / [*Less*](http://lesscss.org/)
 / [*Sass*](https://sass-lang.com/)
