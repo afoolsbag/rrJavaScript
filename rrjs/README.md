@@ -28,12 +28,15 @@
 
 ## 指南
 
-/ [“JavaScript 指南”](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
-/ [“JavaScript 教程”](https://liaoxuefeng.com/wiki/1022910821149312). *廖雪峰的官方网站*.
+*   [“JavaScript 指南”](https://developer.mozilla.org/docs/Web/JavaScript/Guide). *MDN*.
+*   [“JavaScript 教程”](https://liaoxuefeng.com/wiki/1022910821149312). *廖雪峰的官方网站*.
 
 ## Awesome
 
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
+
+*   [*Babel*](https://babeljs.io/) <sub>
+    [*cmn-Hans*](https://babeljs.cn/) </sub>
 
 ## 许可
 
