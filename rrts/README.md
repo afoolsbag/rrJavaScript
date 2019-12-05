@@ -7,6 +7,10 @@
 
 [“Documentation”](https://typescriptlang.org/docs/home.html). *TypeScript*.
 
+## 风格
+
+[*TSDoc*](https://github.com/Microsoft/tsdoc)
+
 ## 许可
 
 项目采用 Unlicense 许可，文档采用 CC0-1.0 许可：

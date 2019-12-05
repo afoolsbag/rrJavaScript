@@ -3,7 +3,7 @@
  *
  * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Functions}
  *
- * @version 2019-12-04
+ * @version 2019-12-05
  * @since 2018-11-09
  * @author zhengrr
  * @license Unlicense
@@ -82,15 +82,15 @@ test('arrow functions', () => {
  * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Closures}
  */
 test('closure', () => {
-  function outside (x) {
-    function inside (y) {
+  function makeFunc (x) {
+    function func (y) {
       return x + y
     }
 
-    return inside
+    return func
   }
 
-  const func = outside(1)
+  const func = makeFunc(1)
   expect(func(2)).toBe(3)
-  expect(outside(4)(5)).toBe(9)
+  expect(makeFunc(4)(5)).toBe(9)
 })
