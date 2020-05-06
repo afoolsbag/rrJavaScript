@@ -1,45 +1,34 @@
 {
+  "name//": "https://docs.npmjs.com/files/package.json#name",
   "name": "rrjs",
+  "version//": "https://docs.npmjs.com/files/package.json#version",
   "version": "2019.12.03",
+  "description//": "https://docs.npmjs.com/files/package.json#description-1",
   "description": "...",
+  "license//": "https://docs.npmjs.com/files/package.json#license",
   "license": "Unlicense",
+  "author//": "https://docs.npmjs.com/files/package.json#people-fields-author-contributors",
   "author": "zhengrr",
+  "scripts//": "https://docs.npmjs.com/files/package.json#scripts",
   "scripts": {
-    "lint": "eslint .",
-    "test": "jest"
+    "test": "npx standard && npx jest"
   },
+  "devDependencies//": [
+    "https://docs.npmjs.com/files/package.json#devdependencies",
+    "jest 测试工具",
+    "standard 检查工具"
+  ],
   "devDependencies": {
-    "@babel/core": "*",
-    "@types/jest": "*",
-    "babel-jest": "*",
-    "eslint": "*",
-    "eslint-config-standard": "*",
-    "eslint-plugin-import": "*",
-    "eslint-plugin-node": "*",
-    "eslint-plugin-promise": "*",
-    "eslint-plugin-standard": "*",
-    "jest": "*"
+    "jest": "*",
+    "standard": "*"
   },
+  "private//": "https://docs.npmjs.com/files/package.json#private",
   "private": true,
-  "eslintConfig": {
-    "env": {
-      "browser": true,
-      "es6": true,
-      "jest": true,
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "standard"
-    ],
-    "globals": {
-      "Atomics": "readonly",
-      "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-      "ecmaVersion": 2018,
-      "sourceType": "module"
-    },
-    "rules": {}
+  "standard//": "https://standardjs.com/#i-use-a-library-that-pollutes-the-global-namespace-how-do-i-prevent-variable-is-not-defined-errors",
+  "standard": {
+    "globals": [
+      "expect",
+      "test"
+    ]
   }
 }

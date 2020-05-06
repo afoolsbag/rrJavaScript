@@ -51,7 +51,7 @@
 | [*Stylus*](http://stylus-lang.com/)
 
 | [*Babel*](https://babeljs.io/) <sub>
-      [*cmn-hans*](https://babeljs.cn/) </sub>
+      [*cmn-Hans*](https://babeljs.cn/) </sub>
 | [*CoffeeScript*](https://coffeescript.org/)
 
 | [*SRI Hash Generator*](https://www.srihash.org)
@@ -66,7 +66,7 @@
 | [*jQuery*](https://jquery.com/)
 | [*Vue*](https://vuejs.org/)
 | [*WebStorm*](https://jetbrains.com/webstorm/) <sub>
-      [*zh_cn *](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm) </sub>
+      [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm) </sub>
 
 ## 许可
 
