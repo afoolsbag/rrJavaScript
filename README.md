@@ -67,11 +67,10 @@
 | [*WebStorm*](https://jetbrains.com/webstorm/) <sub>
       [*zh_CN*](https://github.com/pingfangx/jetbrains-in-chinese/tree/master/WebStorm) </sub>
 
-
 ### Node.js 版本管理器 nvm
 
-官网 <https://github.com/nvm-sh/nvm>，
-适用于 Windows 的官网 <https://github.com/coreybutler/nvm-windows>。
+[*nvm 官网*](https://github.com/nvm-sh/nvm)，
+[*nvm-windows 官网*](https://github.com/coreybutler/nvm-windows)。
 
 ```cmder
 :: 使用 Scoop 安装 nvm
@@ -85,7 +84,7 @@
 %USERPROFILE% λ nvm list available
 
 :: 下载某版本
-%USERPROFILE% λ nvm install <version>
+%USERPROFILE% λ nvm install {<version> | latest}
 
 :: 列出已安装版本
 %USERPROFILE% λ nvm list
@@ -96,34 +95,36 @@
 
 ### 基于 Chrome V8 引擎的 JavaScript 运行时 Node.js
 
-官网 <https://nodejs.org/>。
+[*Node.js 官网*](https://nodejs.org/)。
 
 ```cmder
-:: 运行脚本
-%USERPROFILE% λ node <script.js>
-
 :: 交互式壳层
 %USERPROFILE% λ node
+
+:: 运行脚本
+%USERPROFILE% λ node <script.js>
 ```
 
 ### Node.js 包管理器 npm
 
-官网 <https://npmjs.com/>。
+[*npm 官网*](https://npmjs.com/)。
 
-```
+```cmder
 :: 列出配置
 %USERPROFILE% λ npm config list
-:: abbr.        npm c list
+:: abbr.        npm c ls
 
 :: 编辑配置
 %USERPROFILE% λ npm config edit
 :: abbr.        npm c edit
 
-:: 设置安装位置和镜像源
+:: 设置安装位置
 %USERPROFILE% λ npm config set prefix "%APPDATA%\npm"
 :: abbr.        npm set prefix "%APPDATA%\npm"
 %USERPROFILE% λ npm config set cache "%APPDATA\npm-cache"
 :: abbr.        npm set cache "%APPDATA%\npm-cache"
+
+:: 设置镜像源
 %USERPROFILE% λ npm config set registry https://registry.npm.taobao.org/
 :: abbr.        npm set registry https://registry.npm.taobao.org/
 
