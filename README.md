@@ -38,6 +38,13 @@
 [*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)，
 [*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)。
 
+*   [*webpack*](https://webpack.js.org/) <sub>
+        [*cmn-Hans*](https://webpackjs.com/) </sub>
+*   [*gulp.js*](https://gulpjs.com/) <sub>
+        [*cmn-Hans*](https://gulpjs.com.cn/) </sub>
+*   [*Browserify*](http://browserify.org/)
+*   [*grunt.js*](https://gruntjs.com/)
+
 *   [*Babel*](https://babeljs.io/) <sub>
         [*cmn-Hans*](https://babeljs.cn/) </sub>
 *   [*ESLint*](https://eslint.org/) <sub>

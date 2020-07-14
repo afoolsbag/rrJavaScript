@@ -9,7 +9,7 @@
 
 ## 风格
 
-[*TSDoc*](https://github.com/Microsoft/tsdoc)
+[*TSDoc*](https://github.com/Microsoft/tsdoc)。
 
 ## 许可
 

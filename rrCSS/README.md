@@ -1,13 +1,10 @@
-# zhengrr 所知的 World Wide Web
+# zhengrr 所知的 Cascading Style Sheets
 
-[*WHATWG*](https://whatwg.org/ "Web Hypertext Application Technology Working Group")
-*   [*HTML*](https://w3.org/html/ "Hypertext Markup Language")
-*   [*CSS*](https://w3.org/Style/CSS/ "Cascading Style Sheets")
-*   [*JS*](https://developer.mozilla.org/docs/Web/JavaScript "JavaScript, 1995")
+官网 <https://w3.org/Style/CSS/>。
 
 ## 风格
 
-[*BEM*](http://getbem.com/)
+CSS 编码风格 [*BEM*](http://getbem.com/)。
 
 ## Awesome
 

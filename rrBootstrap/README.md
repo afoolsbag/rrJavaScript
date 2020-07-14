@@ -1,17 +1,7 @@
-# zhengrr 所知的 Electron
+# zhengrr 所知的 Bootstrap
 
-[*Electron*](https://electronjs.org/)
-
-## 参考
-
-## 风格
-
-## 指南
-
-## Awesome
-
-应用部署
-/ [*electron-builder*](https://electron.build/)
+官网 <https://getbootstrap.com/>。
+[*Bootstrap 中文网*](https://www.bootcss.com/)。
 
 ## 许可
 
