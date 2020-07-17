@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="zhengrr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <title>Bootstrap 网格</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous"/>
+  <style>
+    body {
+      text-align: center;
+    }
+
+    div {
+      background-color: lightgray;
+      margin: 1px;
+      border: thin solid black;
+    }
+
+    div div {
+      border: thin dotted red;
+    }
+
+    div div div {
+      border: thin dotted blue;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-auto">依据内容自动调整跨度</div>
+    <div class="col">自动等分跨度</div>
+    <div class="col">自动等分跨度</div>
+  </div>
+  <div class="row">
+    <div class="col-1">跨度 1/12</div>
+  </div>
+  <div class="row">
+    <div class="col-2">跨度 2/12</div>
+  </div>
+  <div class="row">
+    <div class="col-3">跨度 3/12</div>
+  </div>
+  <div class="row">
+    <div class="col-4">跨度 4/12</div>
+  </div>
+  <div class="row">
+    <div class="col-5">跨度 5/12</div>
+  </div>
+  <div class="row">
+    <div class="col-6">跨度 6/12</div>
+  </div>
+  <div class="row">
+    <div class="col-7">跨度 7/12</div>
+  </div>
+  <div class="row">
+    <div class="col-8">跨度 8/12</div>
+  </div>
+  <div class="row">
+    <div class="col-9">跨度 9/12</div>
+  </div>
+  <div class="row">
+    <div class="col-10">跨度 10/12</div>
+  </div>
+  <div class="row">
+    <div class="col-11">跨度 11/12</div>
+  </div>
+  <div class="row">
+    <div class="col-12">跨度 12/12</div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">列 <code>col-sm-*</code>，当视口窄于 576px 时分列</div>
+    <div class="col-sm">列 <code>col-sm-*</code></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md">列 <code>col-md-*</code>，当视口窄于 768px 时分列</div>
+    <div class="col-md">列 <code>col-md-*</code></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg">列 <code>col-lg-*</code>，当视口窄于 992px 时分列</div>
+    <div class="col-lg">列 <code>col-lg-*</code></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl">列 <code>col-xl-*</code>，当视口窄于 1200px 时分列</div>
+    <div class="col-xl">列 <code>col-xl-*</code></div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/jquery/dist/jquery.slim.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core/dist/umd/popper.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+</body>
+</html>

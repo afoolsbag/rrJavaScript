@@ -1,6 +1,6 @@
-# zhengrr 所知的 Bootstrap
+# zhengrr 所知的 Stylus
 
-官网 <https://getbootstrap.com/>。
+官网 <https://stylus-lang.com/>。
 
 ## 许可
 

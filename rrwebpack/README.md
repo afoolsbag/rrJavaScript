@@ -1,6 +1,6 @@
-# zhengrr 所知的 Bootstrap
+# zhengrr 所知的 webpack
 
-官网 <https://getbootstrap.com/>。
+官网 <https://webpack.js.org/>。
 
 ## 许可
 

@@ -8,6 +8,8 @@ CSS 编码风格 [*BEM*](http://getbem.com/)。
 
 ## Awesome
 
+[*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
+
 *   [*webpack*](https://webpack.js.org/) <sub>
         [*cmn-Hans*](https://webpackjs.com/) </sub>
 *   [*gulp.js*](https://gulpjs.com/) <sub>

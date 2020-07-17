@@ -1,6 +1,14 @@
-# zhengrr 所知的 Bootstrap
+# zhengrr 所知的 TypeScript
 
-官网 <https://getbootstrap.com/>。
+官网 <https://www.typescriptlang.org/>。
+
+## 参考
+
+*   [*TypeScript 上的 Documentation*](https://typescriptlang.org/docs/home.html)
+
+## 风格
+
+*   TypeScript 的文档注释标准 [*TSDoc*](https://github.com/Microsoft/tsdoc)
 
 ## 许可
 

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="zhengrr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>实例生命周期钩子</title>
+</head>
+<body>
+
+<div id="app">
+  {{ message }}
+</div>
+
+<script src="https://unpkg.com/vue/dist/vue.js" crossorigin="anonymous"></script>
+<script>
+  let vm = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello Vue!'
+    },
+    beforeCreate: function () {
+      window.console.log('vm on beforeCreate')
+    },
+    created: function () {
+      window.console.log('vm on created')
+    },
+    beforeMount: function () {
+      window.console.log('vm on beforeMount')
+    },
+    mounted: function () {
+      window.console.log('vm on mounted')
+    },
+    beforeUpdate: function () {
+      window.console.log('vm on beforeUpdate')
+    },
+    updated: function () {
+      window.console.log('vm on updated')
+    },
+    beforeDestroy: function () {
+      window.console.log('vm on beforeDestroy')
+    },
+    destroyed: function () {
+      window.console.log('vm on destroyed')
+    }
+  })
+</script>
+</body>
+</html>

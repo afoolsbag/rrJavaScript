@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="author" content="zhengrr">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
+  <title>Bootstrap 表格</title>
+  <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" crossorigin="anonymous"/>
+</head>
+<body>
+
+<table>
+  <caption>表格标题</caption>
+  <thead>
+  <tr>
+    <th></th>
+    <th>第 A 列</th>
+    <th>第 B 列</th>
+    <th>第 C 列</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <th>第 1 行</th>
+    <td>数据 A1</td>
+    <td>数据 B1</td>
+    <td rowspan="2">跨行数据 C1-C2</td>
+  </tr>
+  <tr>
+    <th>第 2 行</th>
+    <td colspan="2">跨列数据 A2-B2</td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+    <th>合计</th>
+    <td>第 A 列合计</td>
+    <td>第 B 列合计</td>
+    <td>第 C 列合计</td>
+  </tr>
+  </tfoot>
+</table>
+
+<script src="https://unpkg.com/jquery/dist/jquery.slim.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@popperjs/core/dist/umd/popper.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap/dist/js/bootstrap.js" crossorigin="anonymous"></script>
+</body>
+</html>
