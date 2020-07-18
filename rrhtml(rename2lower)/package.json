@@ -1,0 +1,14 @@
+{
+  "name": "rrhtml",
+  "version": "2020.07.19",
+  "description": "...",
+  "license": "Unlicense",
+  "author": "zhengrr",
+  "scripts": {
+    "start": "npx hppt-server -o"
+  },
+  "dependencies": {
+    "http-server": "*"
+  },
+  "private": true
+}
