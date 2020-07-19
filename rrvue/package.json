@@ -1,11 +1,11 @@
 {
-  "name": "rrhtml",
+  "name": "rrvue",
   "version": "2020.07.19",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
   "scripts": {
-    "start": "npx http-server -o"
+    "start": "npx hppt-server -o"
   },
   "dependencies": {
     "http-server": "*"

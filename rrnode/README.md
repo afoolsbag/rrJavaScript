@@ -12,6 +12,8 @@
 
 ## Awesome
 
+*   [*ts-node*](https://github.com/TypeStrong/ts-node)
+
 ### Node.js 版本管理器 nvm
 
 [*nvm 官网*](https://github.com/nvm-sh/nvm)，
@@ -41,6 +43,8 @@
 ### Node.js 包管理器 npm
 
 [*npm 官网*](https://npmjs.com/)。
+
+*   [*npm Documentation 上的 npm-package.json*](https://docs.npmjs.com/configuring-npm/package-json.html)
 
 ```cmder
 :: 列出配置

@@ -1,21 +1,6 @@
-# zhengrr 所知的 TypeScript
+# zhengrr 所知的 Underscore.js
 
-官网 <https://www.typescriptlang.org/>。
-
-## 参考
-
-*   [*TypeScript 上的 Documentation*](https://typescriptlang.org/docs/home.html)
-
-## 风格
-
-*   TypeScript 的文档注释标准 [*TSDoc*](https://github.com/Microsoft/tsdoc)
-
-## Awesome
-
-*   [*TSLint*](https://palantir.github.io/tslint/)
-    *   [*TypeScript ESLint*](https://github.com/typescript-eslint/typescript-eslint)
-*   [*Jest*](https://jestjs.io/)
-    *   [*ts-jest*](https://kulshekhar.github.io/ts-jest/)
+官网 <https://underscorejs.org/>。
 
 ## 许可
 

@@ -20,6 +20,11 @@
 ## 参考
 
 *   [*MDN 上的 JavaScript 参考*](https://developer.mozilla.org/docs/Web/JavaScript/Reference)
+*   JavaScript 模块规范
+    *   [`CommonJS`](http://www.commonjs.org/) 是一种使用同步加载的模块规范，适用于服务器环境
+    *   [`AMD`](https://github.com/amdjs/amdjs-api) 是一种使用异步加载的模块规范，适用于浏览器环境
+    *   [`UMD`](https://github.com/umdjs/umd) 兼顾 `CommonJS` 和 `AMD`，通过适配层以支持两种加载方式
+    *   [`ECMAScript modules`](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Modules) 是官方的模块规范，旨在统一现行的各民间规范
 
 ## 风格
 

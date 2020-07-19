@@ -1,34 +1,20 @@
 {
-  "name//": "https://docs.npmjs.com/files/package.json#name",
-  "name": "rrjs",
-  "version//": "https://docs.npmjs.com/files/package.json#version",
-  "version": "2019.12.03",
-  "description//": "https://docs.npmjs.com/files/package.json#description-1",
+  "name": "rrjavascript",
+  "version": "2020.07.19",
   "description": "...",
-  "license//": "https://docs.npmjs.com/files/package.json#license",
   "license": "Unlicense",
-  "author//": "https://docs.npmjs.com/files/package.json#people-fields-author-contributors",
   "author": "zhengrr",
-  "scripts//": "https://docs.npmjs.com/files/package.json#scripts",
   "scripts": {
-    "test": "npx standard && npx jest"
+    "lint": "standard",
+    "test": "jest",
+    "all-until-test": "npm install && npm run-script lint && npm test"
   },
-  "devDependencies//": [
-    "https://docs.npmjs.com/files/package.json#devdependencies",
-    "jest 测试工具",
-    "standard 检查工具"
-  ],
   "devDependencies": {
     "jest": "*",
     "standard": "*"
   },
-  "private//": "https://docs.npmjs.com/files/package.json#private",
   "private": true,
-  "standard//": "https://standardjs.com/#i-use-a-library-that-pollutes-the-global-namespace-how-do-i-prevent-variable-is-not-defined-errors",
   "standard": {
-    "globals": [
-      "expect",
-      "test"
-    ]
+    "env": "jest"
   }
 }

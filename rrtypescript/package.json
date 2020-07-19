@@ -1,26 +1,21 @@
 {
-  "name": "rrnode",
+  "name": "rrtypescript",
   "version": "2020.07.19",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "main": "src/main.ts",
   "scripts": {
     "lint": "eslint --ext .ts .",
     "test": "jest",
-    "all-until-test": "npm install && npm run-script lint && npm test",
-    "start": "ts-node .",
-    "all-until-start": "npm install && npm run-script lint && npm test && npm start"
+    "all-until-test": "npm install && npm run-script lint && npm test"
   },
   "devDependencies": {
     "@types/jest": "*",
-    "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
     "eslint": "*",
     "jest": "*",
     "ts-jest": "*",
-    "ts-node": "*",
     "typescript": "*"
   },
   "private": true
