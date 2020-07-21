@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';"/>
+  <title>Electron 模板</title>
+</head>
+<body>
+
+<h1>Hello World!</h1>
+<!-- All of the Node.js APIs are available in this renderer process. -->
+<p>
+  We are using Node.js <script>document.write(process.versions.node)</script>,
+  Chromium <script>document.write(process.versions.chrome)</script>,
+  and Electron <script>document.write(process.versions.electron)</script>.
+</p>
+
+<script>
+  // You can also require other files to run in this process
+  require('../build/renderer/index.js')
+</script>
+</body>
+</html>

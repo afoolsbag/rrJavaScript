@@ -1,0 +1,24 @@
+{
+  "name": "rrelectron",
+  "version": "2020.07.20",
+  "description": "...",
+  "license": "Unlicense",
+  "author": "zhengrr",
+  "main": "build/main/index.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "build": "tsc",
+    "prestart": "npm run-script build",
+    "start": "electron .",
+    "prepack": "npm run-script build",
+    "pack": "electron-builder --dir",
+    "predist": "npm run-script pack",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "*",
+    "electron-builder": "*",
+    "typescript": "*"
+  },
+  "private": true
+}

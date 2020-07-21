@@ -2,6 +2,14 @@
 
 官网 <https://electronjs.org/>。
 
+```cmder
+:: 为 Electron 二进制文件的下载配置镜像
+%USERPROFILE% λ SET ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/
+
+:: 为 electron-builder 二进制文件的下载配置代理
+%USERPROFILE% λ SET HTTPS_PROXY=127.0.0.1:9
+```
+
 ## Awesome
 
 [*electron-builder*](https://electron.build/ "应用部署")

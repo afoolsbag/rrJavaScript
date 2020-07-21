@@ -13,10 +13,20 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-npm test ^
-        || ECHO npm test failed. ^
+DEL /Q package-lock.json 1>NUL 2>NUL ^
+        || ECHO Delete package-lock.json failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
+
+npm install ^
+        || ECHO Run npm install failed. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 4
+
+npm prune ^
+        || ECHO Run npm prune failed. ^
+        && CALL :pause_if_double_click ^
+        && EXIT /B 5
 
 CALL :pause_if_double_click
 EXIT /B 0
