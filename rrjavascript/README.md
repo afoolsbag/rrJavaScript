@@ -38,7 +38,7 @@
 
 ## Awesome
 
-[*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript)
+[*Awesome JavaScript*](https://github.com/sorrycc/awesome-javascript) 
 
 *   [*webpack*](https://webpack.js.org/) <sub>
         [*cmn-Hans*](https://webpackjs.com/) </sub>

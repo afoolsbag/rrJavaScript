@@ -10,4 +10,7 @@
  * @license Unlicense
  */
 
-'use strict';
+'use strict'
+
+test('', () => {
+})

@@ -13,7 +13,7 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-npx tsc --outDir manual-build manual-src/empty.ts ^
+npx --package typescript tsc --outDir build src/empty.ts ^
         || ECHO Run tsc via npx failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3

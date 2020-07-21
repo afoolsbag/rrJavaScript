@@ -10,13 +10,13 @@
  * @license Unlicense
  */
 
-'use strict';
+'use strict'
 
-import {strict as assert} from 'assert';
+const strict = require('assert').strict
 
 test('', () => {
-    // Node.js
-    assert.equal(1, 1);
-    // Jest
-    expect(1).toBe(1);
-});
+  // Node.js
+  strict.equal(1, 1)
+  // Jest
+  expect(1).toBe(1)
+})

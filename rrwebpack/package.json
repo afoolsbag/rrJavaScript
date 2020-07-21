@@ -1,0 +1,20 @@
+{
+  "name": "rrwebpack",
+  "version": "2020.07.21",
+  "description": "...",
+  "license": "Unlicense",
+  "author": "zhengrr",
+  "scripts": {
+    "lint": "standard",
+    "test": "jest",
+    "all-until-test": "npm install && npm run-script lint && npm test"
+  },
+  "devDependencies": {
+    "jest": "*",
+    "standard": "*"
+  },
+  "private": true,
+  "standard": {
+    "env": "jest"
+  }
+}

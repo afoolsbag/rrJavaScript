@@ -1,27 +1,20 @@
 {
   "name": "rrnode",
-  "version": "2020.07.19",
+  "version": "2020.07.21",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "main": "src/main.ts",
+  "main": "src/main.js",
   "scripts": {
-    "lint": "eslint --ext .ts .",
+    "lint": "standard --env jest",
     "test": "jest",
     "all-until-test": "npm install && npm run-script lint && npm test",
-    "start": "ts-node .",
+    "start": "node .",
     "all-until-start": "npm install && npm run-script lint && npm test && npm start"
   },
   "devDependencies": {
-    "@types/jest": "*",
-    "@types/node": "*",
-    "@typescript-eslint/eslint-plugin": "*",
-    "@typescript-eslint/parser": "*",
-    "eslint": "*",
     "jest": "*",
-    "ts-jest": "*",
-    "ts-node": "*",
-    "typescript": "*"
+    "standard": "*"
   },
   "private": true
 }

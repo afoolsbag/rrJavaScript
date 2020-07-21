@@ -10,30 +10,30 @@
  * @license Unlicense
  */
 
-'use strict';
+'use strict'
 
-import os from 'os';
+const os = require('os')
 
 test('arch', () => {
-    console.log(os.arch());
-});
+  console.log(os.arch())
+})
 
 test('endianness', () => {
-    console.log(os.endianness());
-});
+  console.log(os.endianness())
+})
 
 test('homedir', () => {
-    console.log(os.homedir());
-});
+  console.log(os.homedir())
+})
 
 test('hostname', () => {
-    console.log(os.hostname());
-});
+  console.log(os.hostname())
+})
 
 test('platform', () => {
-    console.log(os.platform());
-});
+  console.log(os.platform())
+})
 
 test('release', () => {
-    console.log(os.release());
-});
+  console.log(os.release())
+})

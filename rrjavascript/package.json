@@ -1,20 +1,24 @@
 {
   "name": "rrjavascript",
-  "version": "2020.07.19",
+  "version": "2020.07.21",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
+  "main": "src/main.js",
   "scripts": {
-    "lint": "standard",
+    "lint": "standard --env jest",
     "test": "jest",
-    "all-until-test": "npm install && npm run-script lint && npm test"
+    "all-until-test": "npm install && npm run-script lint && npm test",
+    "start": "babel-node .",
+    "all-until-start": "npm install && npm run-script lint && npm test && npm start"
   },
   "devDependencies": {
+    "@babel/core": "*",
+    "@babel/node": "*",
+    "@babel/preset-env": "*",
+    "babel-jest": "*",
     "jest": "*",
     "standard": "*"
   },
-  "private": true,
-  "standard": {
-    "env": "jest"
-  }
+  "private": true
 }
