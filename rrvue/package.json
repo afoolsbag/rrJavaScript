@@ -5,7 +5,7 @@
   "license": "Unlicense",
   "author": "zhengrr",
   "scripts": {
-    "start": "npx hppt-server -o"
+    "start": "http-server -o"
   },
   "dependencies": {
     "http-server": "*"
