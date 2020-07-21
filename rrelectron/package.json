@@ -4,21 +4,18 @@
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "main": "build/main/index.js",
+  "main": "src/main/index.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
-    "build": "tsc",
-    "prestart": "npm run-script build",
     "start": "electron .",
-    "prepack": "npm run-script build",
+    "all-until-start": "npm start",
     "pack": "electron-builder --dir",
-    "predist": "npm run-script pack",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "all-until-dist": "npm run-script pack && npm run-script dist"
   },
   "devDependencies": {
     "electron": "*",
-    "electron-builder": "*",
-    "typescript": "*"
+    "electron-builder": "*"
   },
   "private": true
 }
