@@ -1,21 +1,15 @@
 {
   "name": "rrelectron",
-  "version": "2020.07.20",
+  "version": "2020.07.22",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "main": "src/main/index.js",
+  "main": "main.js",
   "scripts": {
-    "postinstall": "electron-builder install-app-deps",
-    "start": "electron .",
-    "all-until-start": "npm start",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder",
-    "all-until-dist": "npm run-script pack && npm run-script dist"
+    "start": "electron ."
   },
   "devDependencies": {
-    "electron": "*",
-    "electron-builder": "*"
+    "electron": "*"
   },
   "private": true
 }

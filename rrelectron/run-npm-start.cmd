@@ -13,8 +13,8 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-npm run-script all-until-start ^
-        || ECHO Run all until start failed. ^
+npm start ^
+        || ECHO Run npm start failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 

@@ -12,7 +12,8 @@
 
 ## Awesome
 
-[*electron-builder*](https://electron.build/ "应用部署")
+*   [*electron-webpack*](https://webpack.electron.build/ "应用配置")
+*   [*electron-builder*](https://electron.build/ "应用部署")
 
 ## 许可
 

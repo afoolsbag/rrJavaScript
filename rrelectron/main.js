@@ -15,7 +15,7 @@ function createWindow () {
   })
 
   // 加载 index.html 文件
-  mainWindow.loadFile('file://${__dirname}/../../static/index.html')
+  mainWindow.loadFile('./index.html')
 
   // 打开开发者工具
   mainWindow.webContents.openDevTools()
