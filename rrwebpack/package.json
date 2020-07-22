@@ -5,16 +5,31 @@
   "license": "Unlicense",
   "author": "zhengrr",
   "scripts": {
-    "lint": "standard",
-    "test": "jest",
-    "all-until-test": "npm install && npm run-script lint && npm test"
+    "build:development": "webpack --config webpack.dev.js",
+    "watch": "webpack --watch --config webpack.dev.js",
+    "start": "webpack-dev-server --config webpack.dev.js --open",
+    "build:production": "webpack --config webpack.prod.js",
+    "build": "npm run-script build:production"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "lodash": "*",
+    "vue": "*"
   },
   "devDependencies": {
-    "jest": "*",
-    "standard": "*"
+    "clean-webpack-plugin": "*",
+    "css-loader": "*",
+    "csv-loader": "*",
+    "file-loader": "*",
+    "html-webpack-plugin": "*",
+    "mini-css-extract-plugin": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*",
+    "webpack-merge": "*",
+    "xml-loader": "*"
   },
-  "private": true,
-  "standard": {
-    "env": "jest"
-  }
+  "private": true
 }
