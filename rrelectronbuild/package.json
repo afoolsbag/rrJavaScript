@@ -1,0 +1,33 @@
+{
+  "name": "rrelectronbuild",
+  "version": "2020.07.22",
+  "description": "使用 electron.build 工具链和约定的示例",
+  "license": "Unlicense",
+  "author": "zhengrr",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "predist": "npm run-script compile",
+    "dist": "electron-builder",
+    "predist:dir": "npm run-script compile",
+    "dist:dir": "electron-builder --dir --config.compression=store --config.mac.identity=null"
+  },
+  "dependencies": {
+    "source-map-support": "*"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "bootstrap": "*",
+    "electron": "*",
+    "electron-builder": "*",
+    "electron-webpack": "*",
+    "electron-webpack-vue": "*",
+    "jquery": "*",
+    "lodash": "*",
+    "@popperjs/core": "*",
+    "vue": "*",
+    "vuex": "*",
+    "webpack": "*"
+  },
+  "private": true
+}
