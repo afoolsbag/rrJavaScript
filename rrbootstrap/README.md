@@ -2,6 +2,11 @@
 
 官网 <https://getbootstrap.com/>。
 
+## 参考
+
+*   [*Bootstrap 3 文档中译本*](https://v3.bootcss.com/)
+*   [*Bootstrap 4 文档中译本*](https://v4.bootcss.com/docs/)
+
 ## 许可
 
 项目采用 Unlicense 许可，文档采用 CC0-1.0 许可：
