@@ -1,0 +1,18 @@
+{
+  "name": "rrexpress",
+  "version": "2020.09.02",
+  "description": "...",
+  "license": "Unlicense",
+  "author": "zhengrr",
+  "main": "app.js",
+  "scripts": {
+    "lint": "standard",
+    "start": "node .",
+    "all-until-start": "npm install && npm run-script lint && npm start"
+  },
+  "devDependencies": {
+    "express": "*",
+    "standard": "*"
+  },
+  "private": true
+}
