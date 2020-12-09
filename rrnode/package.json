@@ -1,18 +1,18 @@
 {
   "name": "rrnode",
-  "version": "2020.07.21",
+  "version": "2020.12.01",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
   "main": "src/main.js",
   "scripts": {
-    "lint": "standard --env jest",
-    "test": "jest",
-    "all-until-test": "npm install && npm run-script lint && npm test",
-    "start": "node .",
-    "all-until-start": "npm install && npm run-script lint && npm test && npm start"
+    "lint": "standard",
+    "jest": "jest",
+    "test": "npm run-script lint && npm run-script jest",
+    "start": "node ."
   },
   "devDependencies": {
+    "@jest/globals": "*",
     "jest": "*",
     "standard": "*"
   },

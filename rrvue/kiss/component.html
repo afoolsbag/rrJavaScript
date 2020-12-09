@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="version" content="2020-12-09">
+  <meta name="since" content="2020-12-09">
+  <meta name="author" content="zhengrr">
+  <meta name="license" content="Unlicense">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>组件</title>
+</head>
+<body>
+
+<main>
+  <my-component/>
+</main>
+
+<script src="https://unpkg.com/vue@next" crossorigin="anonymous"></script>
+<script>
+  /**
+   * 组件（component）。
+   */
+  const MyComponent = {
+    /**
+     * 模板。
+     */
+    template: `
+      原始消息：“{{ message }}”<br/>
+      颠倒消息：“{{ reversedMessage }}”
+    `,
+
+    /**
+     * 数据属性。
+     */
+    data () {
+      return {
+        count: 0,
+        message: 'Hello Vue!'
+      }
+    },
+
+    /**
+     * 方法。
+     */
+    methods: {
+      increment () {
+        this.count++
+      }
+    },
+
+    /**
+     * 计算属性。
+     */
+    computed: {
+      reversedMessage () {
+        return this.message.split('').reverse().join('')
+      }
+    },
+
+    /**
+     * 侦听器。
+     */
+    watch: {},
+
+    /**
+     * 实例生命周期钩子。
+     */
+    beforeCreate () {
+      window.console.log('on beforeCreate')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    created () {
+      window.console.log('on created')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    beforeMount () {
+      window.console.log('on beforeMount')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    mounted () {
+      window.console.log('on mounted')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    beforeUpdate () {
+      window.console.log('on beforeUpdate')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    updated () {
+      window.console.log('on updated')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    beforeUnmount () {
+      window.console.log('on beforeUnmount')
+    },
+
+    /**
+     * 实例生命周期钩子。
+     */
+    unmounted () {
+      window.console.log('on unmounted')
+    }
+  }
+
+  const app = Vue.createApp({})
+  app.component('my-component', MyComponent)
+  const vm = app.mount('main')
+</script>
+</body>
+</html>

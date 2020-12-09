@@ -3,13 +3,15 @@
  *
  * @see {@link https://developer.mozilla.org/docs/Web/JavaScript/Reference/Classes}
  *
- * @version 2019-12-02
+ * @version 2020-12-01
  * @since 2018-11-09
  * @author zhengrr
  * @license Unlicense
  */
 
 'use strict'
+
+import { test, expect } from '@jest/globals'
 
 class Clazz {}
 

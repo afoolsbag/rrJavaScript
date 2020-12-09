@@ -1,19 +1,19 @@
 # zhengrr 所知的 Electron
 
-官网 <https://electronjs.org/>。
+[Electron](https://electronjs.org/) 是一款支持使用 Web 技术开发桌面 GUI 应用程序的开源软件框架。
 
-```cmder
+``` batch
 :: 为 Electron 二进制文件的下载配置镜像
-%USERPROFILE% λ SET ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/
+%USERPROFILE%> SET ELECTRON_MIRROR=https://cdn.npm.taobao.org/dist/electron/
 
 :: 为 electron-builder 二进制文件的下载配置代理
-%USERPROFILE% λ SET HTTPS_PROXY=127.0.0.1:9
+%USERPROFILE%> SET HTTPS_PROXY=127.0.0.1:9
 ```
 
 ## Awesome
 
-*   [*electron-webpack*](https://webpack.electron.build/ "应用配置")
-*   [*electron-builder*](https://electron.build/ "应用部署")
+*   [electron-webpack](https://webpack.electron.build/ "应用配置")
+*   [electron-builder](https://electron.build/ "应用部署")
 
 ## 许可
 

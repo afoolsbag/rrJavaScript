@@ -1,6 +1,6 @@
 # zhengrr 所知的 jQuery
 
-官网 <https://jquery.com/>。
+[jQuery](https://jquery.com/)。
 
 ## 许可
 

@@ -1,11 +1,11 @@
 # zhengrr 所知的 Bootstrap
 
-官网 <https://getbootstrap.com/>。
+[Bootstrap](https://getbootstrap.com/)。
 
 ## 参考
 
-*   [*Bootstrap 3 文档中译本*](https://v3.bootcss.com/)
-*   [*Bootstrap 4 文档中译本*](https://v4.bootcss.com/docs/)
+*   [Bootstrap 3 文档中译本](https://v3.bootcss.com/)
+*   [Bootstrap 4 文档中译本](https://v4.bootcss.com/docs/)
 
 ## 许可
 

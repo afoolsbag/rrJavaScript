@@ -1,100 +1,103 @@
 # zhengrr 所知的 Node.js
 
-基于 Chrome V8 引擎的 JavaScript 运行时 Node.js，官网 <https://nodejs.org/>。
+[Node.js](https://nodejs.org/) 是基于 Chrome V8 引擎的 JavaScript 运行时。
 
-```cmder
+``` batch
 :: 交互式壳层
-%USERPROFILE% λ node
+%USERPROFILE%> node
 
 :: 运行脚本
-%USERPROFILE% λ node <script.js>
+%USERPROFILE%> node <script.js>
 ```
 
 ## Awesome
 
-*   [*ts-node*](https://github.com/TypeStrong/ts-node)
+*   [ts-node](https://github.com/TypeStrong/ts-node)
 
 ### Node.js 版本管理器 nvm
 
-[*nvm 官网*](https://github.com/nvm-sh/nvm)，
-[*nvm-windows 官网*](https://github.com/coreybutler/nvm-windows)。
-
-```cmder
+``` batch
 :: 使用 Scoop 安装 nvm
-%USERPROFILE% λ scoop install nvm
+%USERPROFILE%> scoop install nvm
 
 :: 为 nvm 配置 Node.js 和 npm 镜像
-%USERPROFILE% λ nvm node_mirror https://npm.taobao.org/mirrors/node/
-%USERPROFILE% λ nvm npm_mirror https://npm.taobao.org/mirrors/npm/
+%USERPROFILE%> nvm node_mirror https://npm.taobao.org/mirrors/node/
+%USERPROFILE%> nvm npm_mirror https://npm.taobao.org/mirrors/npm/
 
 :: 列出可用版本
-%USERPROFILE% λ nvm list available
+%USERPROFILE%> nvm list available
 
 :: 下载某版本
-%USERPROFILE% λ nvm install {<version> | latest}
+%USERPROFILE%> nvm install {<version> | latest}
 
 :: 列出已安装版本
-%USERPROFILE% λ nvm list
+%USERPROFILE%> nvm list
 
 :: 使用某版本
-%USERPROFILE% λ nvm use <version>
+%USERPROFILE%> nvm use <version>
 ```
+
+参见：
+
+*   [nvm: Node Version Manager](https://github.com/nvm-sh/nvm)
+*   [nvm-windows :nvm for Windows](https://github.com/coreybutler/nvm-windows)
 
 ### Node.js 包管理器 npm
 
-[*npm 官网*](https://npmjs.com/)。
-
-*   [*npm Documentation 上的 npm-package.json*](https://docs.npmjs.com/configuring-npm/package-json.html)
-
-```cmder
+``` batch
 :: 列出配置
-%USERPROFILE% λ npm config list
-:: abbr.        npm c ls
+%USERPROFILE%> npm config list
+:: abbr.       npm c ls
 
 :: 编辑配置
-%USERPROFILE% λ npm config edit
-:: abbr.        npm c edit
+%USERPROFILE%> npm config edit
+:: abbr.       npm c edit
 
 :: 设置安装位置
-%USERPROFILE% λ npm config set prefix "%APPDATA%\npm"
-:: abbr.        npm set prefix "%APPDATA%\npm"
-%USERPROFILE% λ npm config set cache "%APPDATA\npm-cache"
-:: abbr.        npm set cache "%APPDATA%\npm-cache"
+%USERPROFILE%> npm config set prefix "%APPDATA%\npm"
+:: abbr.       npm set prefix "%APPDATA%\npm"
+%USERPROFILE%> npm config set cache "%APPDATA\npm-cache"
+:: abbr.       npm set cache "%APPDATA%\npm-cache"
 
 :: 设置镜像源
-%USERPROFILE% λ npm config set registry https://registry.npm.taobao.org/
-:: abbr.        npm set registry https://registry.npm.taobao.org/
+%USERPROFILE%> npm config set registry https://registry.npm.taobao.org/
+:: abbr.       npm set registry https://registry.npm.taobao.org/
 
 :: 或者通过 npm 注册源管理器 nrm 来管理注册源
-%USERPROFILE% λ npm install --global nrm
-:: abbr.        npm i -g nrm
-%USERPROFILE% λ nrm ls
-%USERPROFILE% λ nrm use <registry>
+%USERPROFILE%> npm install --global nrm
+:: abbr.       npm i -g nrm
+%USERPROFILE%> nrm ls
+%USERPROFILE%> nrm use <registry>
 
 :: 升级 npm
-%USERPROFILE% λ npm update --global npm
-:: abbr.        npm up -g npm
+%USERPROFILE%> npm update --global npm
+:: abbr.       npm up -g npm
 
 :: 列出已安装的包
-%USERPROFILE% λ npm list --global
-:: abbr.        npm ls -g
+%USERPROFILE%> npm list --global
+:: abbr.       npm ls -g
 
 :: 搜索包
-%USERPROFILE% λ npm search <package>
-:: abbr.        npm s <package>
+%USERPROFILE%> npm search <package>
+:: abbr.       npm s <package>
 
 :: 安装包
-%USERPROFILE% λ npm install --global <package>
-:: abbr.        npm i -g <package>
+%USERPROFILE%> npm install --global <package>
+:: abbr.       npm i -g <package>
 
 :: 升级包
-%USERPROFILE% λ npm update --global <package>
-:: abbr.        npm up -g <package>
+%USERPROFILE%> npm update --global <package>
+:: abbr.       npm up -g <package>
 
 :: 卸载包
-%USERPROFILE% λ npm remove --global <package>
-:: abbr.        npm r -g <package>
+%USERPROFILE%> npm remove --global <package>
+:: abbr.       npm r -g <package>
 ```
+
+参见：
+
+*   [npm | build amazing things](https://npmjs.com/)
+    *   [package.json | npm Docs](https://docs.npmjs.com/configuring-npm/package-json.html)
 
 ## 许可
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans-CN">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="version" content="2020-12-09">
+  <meta name="since" content="2020-07-19">
+  <meta name="author" content="zhengrr">
+  <meta name="license" content="Unlicense">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello Vue!</title>
+</head>
+<body>
+
+<main>
+  {{ message }}
+</main>
+
+<script src="https://unpkg.com/vue@next" crossorigin="anonymous"></script>
+<script>
+  /**
+   * 根组件（root component）。
+   */
+  const RootComponent = {
+    data () {
+      return {
+        message: 'Hello Vue!'
+      }
+    }
+  }
+
+  /**
+   * 应用（application）。
+   */
+  const app = Vue.createApp(RootComponent)
+
+  /**
+   * 视图模型（view-module），MVVM 架构中的 VM。
+   */
+  const vm = app.mount('main')
+</script>
+</body>
+</html>

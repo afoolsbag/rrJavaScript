@@ -1,22 +1,19 @@
-# zhengrr 所知的 Cascading Style Sheets
+# zhengrr 所知的 CSS
 
-官网 <https://w3.org/Style/CSS/>。
+[Cascading Style Sheets](https://w3.org/Style/CSS/) 是一款样式表语言。
+
+## 参考
+
+*   [CSS（层叠样式表） | MDN](https://developer.mozilla.org/docs/Web/CSS)
 
 ## 风格
 
-CSS 编码风格 [*BEM*](http://getbem.com/)。
+*   [BEM — Block Element Modifier](http://getbem.com/)
 
 ## Awesome
 
-[*Awesome CSS*](https://github.com/awesome-css-group/awesome-css)
+[Awesome CSS](https://github.com/awesome-css-group/awesome-css)
 
-*   [*webpack*](https://webpack.js.org/) <sub>
-        [*cmn-Hans*](https://webpackjs.com/) </sub>
-*   [*gulp.js*](https://gulpjs.com/) <sub>
-        [*cmn-Hans*](https://gulpjs.com.cn/) </sub>
-*   [*Browserify*](http://browserify.org/)
-*   [*grunt.js*](https://gruntjs.com/)
- 
 ## 许可
 
 项目采用 Unlicense 许可，文档采用 CC0-1.0 许可：

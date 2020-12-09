@@ -4,8 +4,7 @@
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "scripts": {
-  },
+  "scripts": {},
   "devDependencies": {
     "stylus": "*"
   },

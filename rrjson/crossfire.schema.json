@@ -1,0 +1,222 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "https://raw.githubusercontent.com/afoolsbag/rrJavaScript/master/rrjson/crossfire.schema.json",
+  "title": "《穿越火线》 JSON 图式",
+  "description": "为收集《穿越火线》数据和学习 JSON 图式而作。",
+  "$comment": "数据取自 BF005.LTA 和评测帖",
+  "$defs": {
+    "doubleNumber": {
+      "$comment": "双重数",
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "i18nString": {
+      "$comment": "国际化字符串",
+      "oneOf": [
+        {"type": "string"},
+        {"$ref": "#/$defs/i18nStrings"}
+      ]
+    },
+    "i18nStrings": {
+      "$comment": "国际化字符串组",
+      "type": "object",
+      "properties": {
+        "cmn-Hans-CN": {"description": "中文大陆简体", "type": "string"},
+        "cmn-Hant-TW": {"description": "中文台湾正体", "type": "string"},
+        "en": {"description": "英文", "type": "string"}
+      }
+    },
+    "interval": {
+      "$comment": "区间",
+      "type": "array",
+      "items": {"type": "number"},
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "baseMode": {
+      "$comment": "基础模式",
+      "type": "object",
+      "properties": {
+        "switchTime": {
+          "description": "切换耗时（s）",
+          "$comment": "ChangeWeaponAnimRatio × 动画耗时",
+          "type": "number"
+        },
+        "movementSpeed": {
+          "description": "移动速度（×100%），相对于手持匕首的移动速度",
+          "$comment": "1 - MoveSpeedPenalty",
+          "type": "number"
+        }
+      }
+    },
+    "fireMode": {
+      "$comment": "射击模式",
+      "allOf": [
+        {"$ref": "#/$defs/baseMode"},
+        {
+          "type": "object",
+          "properties": {
+            "accuracyRecovery": {
+              "description": "精准度恢复（s）",
+              "$comment": "DelayOneShootTime",
+              "type": "number"
+            },
+            "standing": {"description": "站立姿态", "$ref": "#/$defs/fireModePosture"},
+            "crouching": {"description": "蹲伏姿态", "$ref": "#/$defs/fireModePosture"},
+            "moving": {"description": "移动姿态", "$ref": "#/$defs/fireModePosture"},
+            "silentMoving": {"description": "悄声移动姿态", "$ref": "#/$defs/fireModePosture"},
+            "floating": {"description": "浮空姿态", "$ref": "#/$defs/fireModePosture"},
+            ""
+            "range": {
+              "description": "射程（m）",
+              "$comment": "Range",
+              "type": "number"
+            },
+            "damage": {
+              "description": "伤害（pt）",
+              "$comment": "AmmoDamage",
+              "type": "number"
+            },
+            "damageFactorByRandom": {
+              "description": "伤害的随机修正（±100%）",
+              "$comment": "DamageVariantionFactor",
+              "type": "number"
+            },
+            "damageFactorByDistance": {
+              "description": "伤害的距离修正（−100%/m）",
+              "$comment": "DamageFactorByDistance",
+              "type": "number"
+            },
+            "damageFactorByArmor": {
+              "description": "伤害的装甲修正（−100%）",
+              "type": "object",
+              "properties": {
+                "bulletproofHelmet": {
+                  "description": "伤害的防弹头盔修正（−100%）",
+                  "$comment": "1 - ArmorDamageRatioPerNode0",
+                  "type": "number"
+                },
+                "bulletproofVest": {
+                  "description": "伤害的防弹衣修正（−100%）",
+                  "$comment": "1 - ArmorDamageRatioPerNode1",
+                  "type": "number"
+                },
+                "mutationJacket": {
+                  "description": "伤害的防化服修正（−100%）",
+                  "$comment": "1 - ArmorDamageRatioPerNode2",
+                  "type": "number"
+                }
+              }
+            },
+            "damageFactorByNode": {
+              "description": "伤害的节点修正（×100%）",
+              "$comment": "DamageRatioPerNode",
+              "type": "object"
+            },
+            "rateOfFire": {
+              "description": "射击速率（round/min）",
+              "$comment": "ShotsPerMinute",
+              "type": "number"
+            },
+            "magazineCapacity": {
+              "description": "弹夹容量",
+              "$comment": "AmmoPerMagazine 和 MaxAmmo",
+              "$ref": "#/$defs/doubleNumber"
+            },
+            "reloadTime": {
+              "description": "换弹耗时（s）",
+              "$comment": "ReloadAnimRatio × 动画耗时",
+              "type": "number"
+            }
+          }
+        }
+      ]
+    },
+    "fireModePosture": {
+      "$comment": "射击模式姿态",
+      "type": "object",
+      "properties": {
+        "accuracyInterval": {
+          "description": "精准度区间",
+          "$comment": "PerturbMin1 和 PerturbMax1",
+          "$ref": "#/$defs/interval"
+        },
+        "accuracyPerturb": {
+          "description": "精准度扰动",
+          "$comment": "1.15 - DetailPerturbShot1",
+          "type": "number"
+        },
+        "recoilPitchRecovery": {
+          "description": "后坐力俯仰角恢复（s）",
+          "$comment": "DetailReactPitchShot1",
+          "type": "number"
+        },
+        "recoilYawRecovery": {
+          "description": "后坐力航向角恢复（s）",
+          "$comment": "DetailReactYawShot1",
+          "type": "number"
+        },
+        "recoilPitchMax": {
+          "description": "后坐力俯仰角最大偏移",
+          "$comment": "- FullReactPitch1",
+          "type": "number"
+        },
+        "recoilYawMax": {
+          "description": "后坐力航向角最大偏移",
+          "$comment": "- FullReactYaw1",
+          "type": "number"
+        }
+      }
+    },
+    "semiAutomaticMode": {
+      "$comment": "半自动模式",
+      "allOf": [
+        {"$ref": "#/$defs/fireMode"},
+        {
+          "type": "object",
+          "properties": {
+          }
+        }
+      ]
+    },
+    "burstMode": {
+      "$comment": "三连发模式",
+      "allOf": [
+        {"$ref": "#/$defs/fireMode"},
+        {
+          "type": "object",
+          "properties": {
+          }
+        }
+      ]
+    },
+    "fullyAutomaticMode": {
+      "$comment": "全自动模式",
+      "allOf": [
+        {"$ref": "#/$defs/fireMode"},
+        {
+          "type": "object",
+          "properties": {
+          }
+        }
+      ]
+    }
+  },
+  "type": "object",
+  "properties": {
+    "id": {"description": "标识符，通常选用《穿越火线维基》中对应项的标识符", "type": "string"},
+    "wikiUrl": {"description": "在《穿越火线维基》中对应项的页面地址", "type": "string"},
+    "name": {"description": "名称", "$ref": "#/$defs/i18nString"},
+    "modes": {
+      "description": "模式",
+      "type": "object",
+      "properties": {
+        "semiAutomatic": {"description": "半自动", "$ref": "#/$defs/semiAutomaticMode"},
+        "burst": {"description": "三连发", "$ref": "#/$defs/burstMode"},
+        "fullyAutomatic": {"description": "全自动", "$ref": "#/$defs/fullyAutomaticMode"}
+      }
+    }
+  }
+}

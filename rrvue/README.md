@@ -1,6 +1,29 @@
 # zhengrr 所知的 Vue.js
 
-官网 <https://vuejs.org/>。
+[Vue.js](https://vuejs.org/) 是一款开源的 HTML MVVM 框架。
+
+## 参考
+
+### 指令
+
+|                    | 模板示例                      | 缩写                     |
+| ------------------ | ----------------------------- | ------------------------ |
+| 文本插值           | `{{ expr }}`                  |
+|                    | `<elem v-text="expr">`        |
+| 代码插值           | `<elem v-html="expr">`        |
+| 属性插值           | `<elem v-bind:attr="expr" />` | `<elem :attr="expr" />`  |
+| `display` 属性插值 | `<elem v-show="expr" />`      |
+| 条件渲染           | `<elem v-if="expr" />`        |
+|                    | `<elem v-else-if="expr" />`   |
+|                    | `<elem v-else />`             |
+| 列表渲染           | `<elem v-for="tmp in var" />` |
+| 事件监听           | `<elem v-on:event="meth" />`  | `<elem @event="meth" />` |
+| 双向绑定           | `<elem v-model="var" />`      |
+
+参见：
+
+*   [Directives | Vue.js](https://v3.vuejs.org/api/directives.html)
+*   [API — Vue.js § 指令](https://cn.vuejs.org/v2/api/#指令)
 
 ## 许可
 

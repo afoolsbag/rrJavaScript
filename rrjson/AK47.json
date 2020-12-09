@@ -1,0 +1,67 @@
+{
+  "$schema": "./crossfire.schema.json",
+  "id": "AK47",
+  "wikiUrl": "https://crossfirefps.fandom.com/wiki/AK47",
+  "name": "AK47",
+  "modes": {
+    "fullyAutomatic": {
+      "switchTime": 0.8,
+      "movementSpeed": 0.852,
+      "accuracyRecovery": 0.500,
+      "standing": {
+        "accuracyInterval": [0.0043, 0.1500],
+        "accuracyPerturb": 0.182,
+        "recoilPitchRecovery": 0.180,
+        "recoilYawRecovery": 0.0623,
+        "recoilPitchMax": 0.125,
+        "recoilYawMax": 0.0265
+      },
+      "crouching": {
+        "accuracyInterval": [0.0040, 0.1500],
+        "accuracyPerturb": 0.180,
+        "recoilPitchRecovery": 0.170,
+        "recoilYawRecovery": 0.072,
+        "recoilPitchMax": 0.132,
+        "recoilYawMax": 0.0265
+      },
+      "moving": {
+        "accuracyInterval": [0.0053, 0.1950],
+        "accuracyPerturb": 0.230,
+        "recoilPitchRecovery": 0.290,
+        "recoilYawRecovery": 0.130,
+        "recoilPitchMax": 0.150,
+        "recoilYawMax": 0.0305
+      },
+      "silentMoving": {
+        "accuracyInterval": [0.0048, 0.1550],
+        "accuracyPerturb": 0.190,
+        "recoilPitchRecovery": 0.190,
+        "recoilYawRecovery": 0.073,
+        "recoilPitchMax": 0.135,
+        "recoilYawMax": 0.0265
+      },
+      "floating": {
+        "accuracyInterval": [0.0063, 0.2050],
+        "accuracyPerturb": 0.300,
+        "recoilPitchRecovery": 0.350,
+        "recoilYawRecovery": 0.200,
+        "recoilPitchMax": 0.170,
+        "recoilYawMax": 0.033
+      },
+      "range": 300.0,
+      "damage": 116,
+      "damageFactorByRandom": 0.03,
+      "damageFactorByDistance": 0.0018,
+      "damageFactorByArmor": {
+        "bulletproofHelmet": 0.20,
+        "bulletproofVest": 0.20,
+        "mutationJacket": 0.30
+      },
+      "damageFactorByNode": {
+      },
+      "rateOfFire": 590,
+      "magazineCapacity": [30, 60],
+      "reloadTime": 2.8
+    }
+  }
+}
