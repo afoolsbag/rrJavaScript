@@ -3,8 +3,8 @@ CHCP 65001
 SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 
-WHERE /Q npx ^
-        || ECHO The npx executable not found. ^
+WHERE /Q npm ^
+        || ECHO The npm executable not found. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 1
 
@@ -13,8 +13,8 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-npx http-server "static" -o ^
-        || ECHO Run http-server via npx failed. ^
+npm install ^
+        || ECHO Run npm install failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 

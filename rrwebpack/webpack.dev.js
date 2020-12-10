@@ -3,7 +3,7 @@
  *
  * @see {@link https://webpack.docschina.org/configuration/}
  *
- * @version 2020-07-22
+ * @version 2020-12-10
  * @since 2020-07-21
  * @author zhengrr
  * @license Unlicense
@@ -31,7 +31,7 @@ module.exports = merge(common, {
   // 开发服务器
   // https://webpack.docschina.org/configuration/dev-server/
   devServer: {
-    contentBase: './dist',
+    contentBase: './dist'
   },
 
   // 输出
@@ -39,7 +39,7 @@ module.exports = merge(common, {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    chunkFilename: '[name].bundle.js',
+    chunkFilename: '[name].bundle.js'
   },
 
   // 优化
@@ -48,7 +48,7 @@ module.exports = merge(common, {
 
     // 指定模块标识规则
     // https://webpack.docschina.org/configuration/optimization/#optimizationmoduleids
-    moduleIds: 'named',
+    moduleIds: 'named'
 
   },
 
@@ -56,10 +56,10 @@ module.exports = merge(common, {
   // https://webpack.docschina.org/configuration/plugins/
   plugins: [
 
-    // https://github.com/johnagan/clean-webpack-plugin
     // 清理 ./dist
-    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false, }),
+    // https://github.com/johnagan/clean-webpack-plugin
+    new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
 
-  ],
+  ]
 
 })

@@ -1,6 +1,6 @@
 # zhengrr 所知的 Lodash
 
-官网 <https://lodash.com/>。
+[Lodash](https://lodash.com/)。
 
 ## 许可
 

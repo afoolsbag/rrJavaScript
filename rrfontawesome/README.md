@@ -1,6 +1,6 @@
 # zhengrr 所知的 Font Awesome
 
-官网 <https://fontawesome.com/>。
+[Font Awesome](https://fontawesome.com/)。
 
 ## 许可
 

@@ -1,6 +1,6 @@
 # zhengrr 所知的 webpack
 
-官网 <https://webpack.js.org/>。
+[webpack](https://webpack.js.org/)。
 
 ## 许可
 

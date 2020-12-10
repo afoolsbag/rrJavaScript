@@ -3,7 +3,7 @@
  *
  * @see {@link https://webpack.docschina.org/configuration/}
  *
- * @version 2020-07-22
+ * @version 2020-12-10
  * @since 2020-07-21
  * @author zhengrr
  * @license Unlicense
@@ -52,17 +52,17 @@ module.exports = {
       chunks: 'all',
       // 将第三方库分割到同一代码块
       cacheGroups: {
-        vendor: {
+        vendors: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
-          chunks: 'all',
-        },
-      },
+          chunks: 'all'
+        }
+      }
     },
 
     // 指定代码块运行时
     // https://webpack.docschina.org/configuration/optimization/#optimizationruntimechunk
-    runtimeChunk: 'single',
+    runtimeChunk: 'single'
 
     // 指定模块标识规则
     // https://webpack.docschina.org/configuration/optimization/#optimizationmoduleids
@@ -75,35 +75,74 @@ module.exports = {
   module: {
     rules: [
 
+      // 加载语言
+
+      // ECMAScript, AME Module, CommonJS Module
+      // 原生支持
+
+      // ESNext (Babel)
+      // https://webpack.docschina.org/loaders/babel-loader/
+      // npm i @babel/core @babel/preset-env babel-loader -D
+      {
+        test: /\.m?js$/i,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env']
+          }
+        }
+      },
+
+      // TypeScript
+      // https://github.com/TypeStrong/ts-loader
+      // npm i typescript ts-loader -D
+      {
+        test: /\.tsx?$/i,
+        loader: 'ts-loader'
+      },
+
       // 加载样式表
+
+      // CSS
+      // https://webpack.docschina.org/loaders/css-loader/
+      // npm i css-loader -D
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader',],
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
 
-      // 加载图像
+      // Sass
+      // https://webpack.docschina.org/loaders/sass-loader/
+      // npm i sass sass-loader -D
       {
-        test: /\.(gif|jpg|png|svg)$/,
-        use: ['file-loader',],
+        test: /\.s[ac]ss$/i,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       },
 
-      // 加载字体
+      // 加载资源
+      // https://webpack.docschina.org/loaders/file-loader/
+      // npm i file-loader -D
+
+      // 图像
       {
-        test: /\.(eot|otf|ttf|woff|woff2)$/,
-        use: ['file-loader',],
+        test: /\.(gif|jpg|png|svg)$/i,
+        use: ['file-loader']
       },
 
-      // 加载数据
+      // 字体
       {
-        test: /\.(csv|tsv)$/,
-        use: ['csv-loader',],
-      },
-      {
-        test: /\.xml$/,
-        use: ['xml-loader',],
-      },
+        test: /\.(eot|otf|ttf|woff|woff2)$/i,
+        use: ['file-loader']
+      }
 
-    ],
+    ]
+  },
+
+  // 解析
+  // https://webpack.docschina.org/configuration/resolve/
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx']
   },
 
   // 插件
@@ -114,14 +153,16 @@ module.exports = {
     // 清理 ./dist
     // ......
 
-    // https://webpack.docschina.org/plugins/html-webpack-plugin/
     // 生成 index.html
+    // https://webpack.docschina.org/plugins/html-webpack-plugin/
+    // npm i html-webpack-plugin -D
     new HtmlWebpackPlugin(),
 
-    // https://webpack.docschina.org/plugins/mini-css-extract-plugin/
     // 提取 CSS
-    new MiniCssExtractPlugin(),
+    // https://webpack.docschina.org/plugins/mini-css-extract-plugin/
+    // npm install mini-css-extract-plugin -D
+    new MiniCssExtractPlugin()
 
-  ],
+  ]
 
 }

@@ -1,16 +1,15 @@
 {
   "name": "rrtypescript",
-  "version": "2020.07.21",
+  "version": "2020.12.10",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
   "main": "src/main.ts",
   "scripts": {
     "lint": "eslint --ext .ts .",
-    "test": "jest",
-    "all-until-test": "npm install && npm run-script lint && npm test",
-    "start": "ts-node .",
-    "all-until-start": "npm install && npm run-script lint && npm test && npm start"
+    "jest": "jest",
+    "test": "npm run-script lint && npm run-script jest",
+    "start": "ts-node ."
   },
   "devDependencies": {
     "@types/jest": "*",

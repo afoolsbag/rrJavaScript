@@ -3,8 +3,8 @@ CHCP 65001
 SETLOCAL ENABLEEXTENSIONS
 SET script_directory=%~dp0
 
-WHERE /Q npm ^
-        || ECHO The npm executable not found. ^
+WHERE /Q npx ^
+        || ECHO The npx executable not found. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 1
 
@@ -13,8 +13,8 @@ CD "%script_directory%" ^
         && CALL :pause_if_double_click ^
         && EXIT /B 2
 
-npm run-script all-until-test ^
-        || ECHO Run all until test failed. ^
+npx --package typescript tsc --outDir build src\empty.ts ^
+        || ECHO Run tsc via npx failed. ^
         && CALL :pause_if_double_click ^
         && EXIT /B 3
 
