@@ -1,5 +1,5 @@
 # zhengrr
-# 2018-03-03 – 2020-05-01
+# 2018-03-03 – 2020-12-14
 # Unlicense
 
 #-------------------------------------------------------------------------------
@@ -159,7 +159,7 @@ fabric.properties
 
 #-------------------------------------------------------------------------------
 # https://github.com/github/gitignore/blob/master/Node.gitignore
-# 2020-04-29
+# 2020-05-14
 
 # Logs
 logs
@@ -272,17 +272,16 @@ dist
 .vscode-test
 
 # yarn v2
-
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml
+.yarn/install-state.gz
 .pnp.*
 
 #-------------------------------------------------------------------------------
 
 build/
 dist/
-manual-build/
 package-lock.json
 
 /.idea/

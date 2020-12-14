@@ -2,6 +2,11 @@
 
 [Vue.js](https://vuejs.org/) 是一款开源的 HTML MVVM 框架。
 
+*   [Vue Router](https://router.vuejs.org/)
+*   [Vuex](https://vuex.vuejs.org/)
+*   [Vue SSR](https://ssr.vuejs.org/)
+*   [Vue CLI](https://cli.vuejs.org/)
+
 ## 参考
 
 ### 指令

@@ -1,14 +1,8 @@
 {
   "name": "rrfontawesome",
-  "version": "2020.07.19",
+  "version": "2020.12.14",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "scripts": {
-    "start": "http-server -o"
-  },
-  "dependencies": {
-    "http-server": "*"
-  },
   "private": true
 }

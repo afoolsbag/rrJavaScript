@@ -1,14 +1,8 @@
 {
   "name": "rrhtml",
-  "version": "2020.12.08",
+  "version": "2020.12.14",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "scripts": {
-    "start": "http-server \"static\" -o"
-  },
-  "devDependencies": {
-    "http-server": "*"
-  },
   "private": true
 }

@@ -1,12 +1,8 @@
 {
   "name": "rrvue",
-  "version": "2020.12.09",
+  "version": "2020.12.14",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "scripts": {
-  },
-  "devDependencies": {
-  },
   "private": true
 }

@@ -1,12 +1,8 @@
 {
   "name": "rrlodash",
-  "version": "2020.12.10",
+  "version": "2020.12.14",
   "description": "...",
   "license": "Unlicense",
   "author": "zhengrr",
-  "scripts": {
-  },
-  "dependencies": {
-  },
   "private": true
 }
